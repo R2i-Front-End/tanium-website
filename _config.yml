@@ -5,6 +5,9 @@ collections:
   posts:
     title: Posts
     output: true
+  products-and-services:
+    title: Products & Services
+    output: true
   solutions:
     title: Solutions
     output: true
