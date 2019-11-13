@@ -37,4 +37,22 @@ defaults:
         text: ''
       image: ''
       imageLocation: ''
+- scope:
+    path: ''
+    type: home
+  values: 
+    layout: home
+    about:
+      eyebrow: ''
+      title: ''
+      copy: ''
+      cta: 
+        link: ''
+        text: ''
+      list:
+        item: {
+          title: ''
+          icon: ''
+          copy: ''
+        }
 permalink: pretty
