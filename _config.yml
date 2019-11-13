@@ -41,6 +41,7 @@ defaults:
     path: home
     type: pages
   values:
+    layout: home
     about:
       eyebrow: ''
       title: ''
@@ -54,7 +55,7 @@ defaults:
           icon: ''
           copy: ''
 - scope:
-    path: "/*/index.html"
+    path: solutions
     type: pages
   values:
     intro:
