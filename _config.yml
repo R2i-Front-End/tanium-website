@@ -20,4 +20,21 @@ defaults:
     type: pages
   values:
     layout: page
+    hero:
+      title: ''
+      copy: ''
+      icon: ''
+      cta:
+        link: ''
+        text: ''
+      image: ''
+      class: ''
+    bottomCTA:
+      eyebrow: ''
+      title: ''
+      cta: 
+        link: ''
+        text: ''
+      image: ''
+      imageLocation: ''
 permalink: pretty
