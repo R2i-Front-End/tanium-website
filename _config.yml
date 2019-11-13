@@ -39,7 +39,7 @@ defaults:
       imageLocation: ''
 - scope:
     path: ''
-    type: home
+    type: pages
   values:
     layout: home
     about:
