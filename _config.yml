@@ -37,4 +37,58 @@ defaults:
         text: ''
       image: ''
       imageLocation: ''
+- scope:
+    path: '/'
+    type: pages
+  values:
+    about:
+      eyebrow: ''
+      title: ''
+      copy: ''
+      cta:
+        link: ''
+        text: ''
+      list:
+        item:
+          title: ''
+          icon: ''
+          copy: ''
+- scope:
+    path: '/*/index.html'
+    type: pages
+  values:
+    intro:
+      eyebrow: ''
+      title: ''
+      copy: ''
+      facts:
+        fact:
+          figure: ''
+          text: ''
+        fact:
+          figure: ''
+          text: ''
+        fact:
+          figure: ''
+          text: ''
+        fact:
+          figure: ''
+          text: ''
+    callout:
+      title: ''
+      copy: ''
+      cta: 
+        link: ''
+        text: ''
+      image: ''
+      imageLocation: ''
+    solutions: 
+      eyebrow: 'Solutions'
+      title: 'Challenges We Solve'
+      cta:
+        link: ''
+        text: ''
+    industries:
+      eyebrow: 'Industries'
+      title: 'Explore Taniums Industries'
 permalink: pretty
