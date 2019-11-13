@@ -61,7 +61,7 @@ defaults:
           icon: ''
           copy: ''
 - scope:
-    path: 'solutions'
+    path: solutions
     type: pages
   values:
     intro:
