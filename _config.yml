@@ -61,8 +61,8 @@ defaults:
           icon: ''
           copy: ''
 - scope:
-    path: solutions
-    type: pages
+    path: ''
+    type: solution
   values:
     intro:
       eyebrow: ''
