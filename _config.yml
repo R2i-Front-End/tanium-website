@@ -50,9 +50,8 @@ defaults:
         link: ''
         text: ''
       list:
-        item: {
+        item: 
           title: ''
           icon: ''
           copy: ''
-        }
 permalink: pretty
