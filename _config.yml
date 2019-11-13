@@ -8,6 +8,9 @@ collections:
   solutions:
     title: Solutions
     output: true
+  the-tanium-platform:
+    title: The Tanium Platform
+    output: true
   uploads:
     title: Uploads
     output: true
