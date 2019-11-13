@@ -38,7 +38,7 @@ defaults:
       image: ''
       imageLocation: ''
 - scope:
-    path: '/'
+    path: "/"
     type: pages
   values:
     about:
@@ -54,7 +54,7 @@ defaults:
           icon: ''
           copy: ''
 - scope:
-    path: '/*/index.html'
+    path: "/*/index.html"
     type: pages
   values:
     intro:
@@ -65,30 +65,21 @@ defaults:
         fact:
           figure: ''
           text: ''
-        fact:
-          figure: ''
-          text: ''
-        fact:
-          figure: ''
-          text: ''
-        fact:
-          figure: ''
-          text: ''
     callout:
       title: ''
       copy: ''
-      cta: 
+      cta:
         link: ''
         text: ''
       image: ''
       imageLocation: ''
-    solutions: 
-      eyebrow: 'Solutions'
-      title: 'Challenges We Solve'
+    solutions:
+      eyebrow: Solutions
+      title: Challenges We Solve
       cta:
         link: ''
         text: ''
     industries:
-      eyebrow: 'Industries'
-      title: 'Explore Taniums Industries'
+      eyebrow: Industries
+      title: Explore Taniums Industries
 permalink: pretty
