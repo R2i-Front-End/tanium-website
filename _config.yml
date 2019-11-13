@@ -38,7 +38,7 @@ defaults:
       image: ''
       imageLocation: ''
 - scope:
-    path: "/"
+    path: "home"
     type: pages
   values:
     about:
