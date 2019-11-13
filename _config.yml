@@ -32,7 +32,7 @@ defaults:
     bottomCTA:
       eyebrow: ''
       title: ''
-      cta: 
+      cta:
         link: ''
         text: ''
       image: ''
