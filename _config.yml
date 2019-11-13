@@ -62,7 +62,7 @@ defaults:
           copy: ''
 - scope:
     path: ''
-    type: solution
+    type: solutions
   values:
     intro:
       eyebrow: ''
