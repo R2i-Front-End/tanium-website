@@ -40,17 +40,17 @@ defaults:
 - scope:
     path: ''
     type: home
-  values: 
+  values:
     layout: home
     about:
       eyebrow: ''
       title: ''
       copy: ''
-      cta: 
+      cta:
         link: ''
         text: ''
       list:
-        item: 
+        item:
           title: ''
           icon: ''
           copy: ''
