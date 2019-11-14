@@ -5,6 +5,9 @@ collections:
   customer-success-case-studies:
     title: Case Studies
     output: true
+  events:
+    title: Events
+    output: true
   posts:
     title: Posts
     output: true
