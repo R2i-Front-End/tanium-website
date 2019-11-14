@@ -8,6 +8,9 @@ collections:
   events:
     title: Events
     output: true
+  news:
+    title: News
+    output: true
   posts:
     title: Posts
     output: true
