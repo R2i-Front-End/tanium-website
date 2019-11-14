@@ -17,6 +17,7 @@ collections:
   news:
     title: News
     output: true
+    permalink: "/about/news-and-press/"
   posts:
     title: Posts
     output: true
