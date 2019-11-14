@@ -13,6 +13,7 @@ collections:
   events:
     title: Events
     output: true
+    permalink: "/about/events/"
   news:
     title: News
     output: true
