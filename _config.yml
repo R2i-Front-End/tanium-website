@@ -2,6 +2,9 @@
 title: Tanium
 timezone: UTC
 collections:
+  blog:
+    title: Blog
+    output: true
   customer-success-case-studies:
     title: Case Studies
     output: true
