@@ -71,9 +71,10 @@ defaults:
           icon: ''
           copy: ''
 - scope:
-    path: solutions
+    path: products-and-services
     type: pages
   values:
+    layout: products
     intro:
       eyebrow: ''
       title: ''
