@@ -9,6 +9,7 @@ collections:
   case-studies:
     title: Case Studies
     output: true
+    permalink: "/customer-success/case-studies/"
   events:
     title: Events
     output: true
