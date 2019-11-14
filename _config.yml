@@ -11,9 +11,6 @@ collections:
   news:
     title: News
     output: true
-  blog:
-    title: Posts
-    output: true
   posts:
     title: Posts
     output: true
