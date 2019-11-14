@@ -2,7 +2,7 @@
 title: Tanium
 timezone: UTC
 collections:
-  case-studies:
+  customer-success-case-studies:
     title: Case Studies
     output: true
   posts:
