@@ -9,7 +9,7 @@
     padding: ($gutterSm * .5) 0;
     
     @media #{$mediaFullHeader} {
-        padding: 4.5rem 0 0;
+        padding: 4.1rem 0 0;
 
         > div {
             @include position(static, null);

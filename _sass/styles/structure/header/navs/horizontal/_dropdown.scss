@@ -37,6 +37,10 @@ nav {
         font-family: futura-pt-bold, Helvetica, sans-serif;
         font-weight: 700;
         color: $primary;
+        
+        @include hover {
+            color: $accent-1;
+        }
     }
     
     @media #{$mediaToggleHeader} {
@@ -120,6 +124,88 @@ nav {
     }
     
     @media #{$mediaFullHeader} {
+        @include flex(space-between, stretch, null, row nowrap);
+        white-space: nowrap;
         
+        label {
+            
+            &:not(:focus) {
+                @include srOnly();
+            }
+        }
+        
+        > li {
+            @include position(relative, null);
+            
+            > a {
+                display: block;
+                padding: 1.5rem;
+            }
+        
+            > ul {
+                @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 0));
+                display: none;
+                background: $white;
+                @include boxShadow(0 0 2.5rem rgba($black, .25));
+                
+                > li {
+                    
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+                
+            span {
+                display: block;
+                text-transform: uppercase;
+                padding: 0 0 3rem;
+                white-space: nowrap;
+            }
+            
+            em {
+                display: block;
+                white-space: normal;
+            }
+            
+            &.solutions, &.products {
+                position: static;
+                
+                > ul {
+                    @include boxShadow(none);
+                    width: 100%;
+                    max-width: $siteWMx;
+                
+                    > li {
+                        padding: 3rem;
+                        @include flexItem(1, 0, auto);
+                        max-width: 21.5rem;
+                        width: 33.333%;
+                        min-width: 25%;
+
+                        + li {
+                            border-left: .1rem solid $secondary-light;
+                        }
+                    
+                        &:nth-child(2) {
+                            border-left: none;
+                        }
+                        
+                        li {
+                            + li {
+                                margin: 1.5rem 0 0;
+                            }
+                        }
+                    }
+                }
+                
+                
+                &:hover {
+                    > ul {
+                        @include flex(center, stretch, null, row nowrap);
+                    }
+                }
+            }
+        }
     }
 }

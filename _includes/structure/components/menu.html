@@ -5,7 +5,7 @@
 
 <ul{% if include.class %} class="{{ include.class }}"{% endif %}>
     {% for root in pages %}
-    <li>
+    <li{% if root.class %} class="{{ root.class }}"{% endif %}>
         {% if root.link %}
         <a href="{{ root.link }}">
             {% if root.icon %}
@@ -15,6 +15,9 @@
             {{ root.name }}
             {% endif %}
         </a>
+        {% if root.description %}
+        <em>{{ root.description }}</em>
+        {% endif %}
         {% if root.children %}
         <input type="checkbox" id="menu{{ root.name | remove: " " }}" />
         <label for="menu{{ root.name | remove: " " }}">
@@ -45,11 +48,17 @@
                 {% else %}
                 <span>{{ child.name }}</span>
                 {% endif %}
+                {% if child.description %}
+                <em>{{ child.description }}</em>
+                {% endif %}
                 {% if child.children %}
                 <ul>
                     {% for gc in child.children %}
                     <li>
                         <a href="{{ gc.link }}">{{ gc.name }}</a>
+                        {% if gc.description %}
+                        <em>{{ gc.description }}</em>
+                        {% endif %}
                     </li>
                     {% endfor %}
                 </ul>

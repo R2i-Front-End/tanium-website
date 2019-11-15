@@ -1,5 +1,6 @@
 - name: Solutions
   link: /solutions
+  class: solutions
   children: 
     - name: By Use Case
       children:
@@ -43,39 +44,54 @@
   link: /the-tanium-platform
 - name: Products & Services
   link: /products-and-services
+  class: products
   children:
     - name: Core
-      link: /products-and-services/core
+      children:
+        - name: Core Platform
+          link: /products-and-services/core/core-platform
     - name: IT Operations
       children:
         - name: Asset
           link: /products-and-services/it-operations/asset
+          description: Asset Management
         - name: Deploy
           link: /products-and-services/it-operations/deploy
+          description: Software Managmenet
         - name: Discover
           link: /products-and-services/it-operations/discover
+          description: Unmanaged Asset Discovery
         - name: Patch
           link: /products-and-services/it-operations/patch
+          description: Patch Management
         - name: Map
           link: /products-and-services/it-operations/map
+          description: Application Dependency mapping
         - name: Performance
           link: /products-and-services/it-operations/performance
+          description: Endpoint Detection & Response
     - name: Security & Risk
       children:
         - name: Comply
           link: /products-and-services/security-and-risk/comply
+          description: Vulnerability & Configuration Assessment
         - name: Integrity Montior
           link: /products-and-services/security-and-risk/integrity-monitor
+          description: File Integrity Monitoring
         - name: Protect
           link: /products-and-services/security-and-risk/protect
+          description: Endpoint Protection Management
         - name: Reveal
           link: /products-and-services/security-and-risk/reveal
+          description: Sensitive Data Discovery
         - name: Threat Response
           link: /products-and-services/security-and-risk/threat-response
+          description: Endpoint Detection & Response
     - name: Services
       children:
-        - name: Dedicated Onsite Operations Services
+        - name: Enterprise Services
           link: /products-and-services/security-and-risk/dedicated-onsite-operations-services
+          description: Dedicated Onsite Operations Services
         - name: Training Services
           link: /products-and-services/security-and-risk/training-services
 - name: Customer Success
