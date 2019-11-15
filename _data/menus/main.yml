@@ -1,0 +1,133 @@
+- name: Solutions
+  link: /solutions
+  children: 
+    - name: By Use Case
+      children:
+        - name: Cost Optimization
+          link: /solutions/by-use-case/cost-optimization
+        - name: IT Hygiene
+          link: /solutions/by-use-case/it-hygiene
+        - name: Digital Transformation
+          link: /solutions/by-use-case/digital-transformation
+        - name: Cloud/Hybrid
+          link: /solutions/by-use-case/cloud-hybrid
+        - name: Modernizing IT Operations
+          link: /solutions/by-use-case/modernizing-it-operations
+        - name: Cybersecurity
+          link: /solutions/by-use-case/cybersecurity
+        - name: Compliance
+          link: /solutions/by-use-case/compliance
+    - name: By Department
+      children:
+        - name: IT Operations
+          link: /solutions/by-department/it-operations
+        - name: Cybersecurity
+          link: /solutions/by-department/cybersecurity
+        - name: Risk & Compliance
+          link: /solutions/by-department/risk-and-compliance
+    - name: By Industry
+      children:
+        - name: Financial Services
+          link: /solutions/by-industry/financial-services
+        - name: Federal Government
+          link: /solutions/by-industry/federal-government
+        - name: Healthcare
+          link: /solutions/by-industry/healthcare
+        - name: Retail
+          link: /solutions/by-industry/retail
+        - name: State & Local Government
+          link: /solutions/by-industry/state-and-local-government
+        - name: Higher Education
+          link: /solutions/by-industry/higher-education
+- name: The Tanium Platform
+  link: /the-tanium-platform
+- name: Products & Services
+  link: /products-and-services
+  children:
+    - name: Core
+      link: /products-and-services/core
+    - name: IT Operations
+      children:
+        - name: Asset
+          link: /products-and-services/it-operations/asset
+        - name: Deploy
+          link: /products-and-services/it-operations/deploy
+        - name: Discover
+          link: /products-and-services/it-operations/discover
+        - name: Patch
+          link: /products-and-services/it-operations/patch
+        - name: Map
+          link: /products-and-services/it-operations/map
+        - name: Performance
+          link: /products-and-services/it-operations/performance
+    - name: Security & Risk
+      children:
+        - name: Comply
+          link: /products-and-services/security-and-risk/comply
+        - name: Integrity Montior
+          link: /products-and-services/security-and-risk/integrity-monitor
+        - name: Protect
+          link: /products-and-services/security-and-risk/protect
+        - name: Reveal
+          link: /products-and-services/security-and-risk/reveal
+        - name: Threat Response
+          link: /products-and-services/security-and-risk/threat-response
+    - name: Services
+      children:
+        - name: Dedicated Onsite Operations Services
+          link: /products-and-services/security-and-risk/dedicated-onsite-operations-services
+        - name: Training Services
+          link: /products-and-services/security-and-risk/training-services
+- name: Customer Success
+  link: /customer-success
+  children:
+    - name: Case Studies
+      link: /customer-success/case-studies
+    - name: Customer Success Team
+      link: /customer-success/customer-success-team
+    - name: Advocacy Program
+      link: /customer-success/advocacy-program
+    - name: CONVERGE
+      link: /customer-success/converge
+    - name: User Groups
+      link: /customer-success/user-groups
+    - name: Tanium Community
+      link: /customer-success/tanium-community
+- name: Partners
+  link: /partners
+  children:
+    - name: Consultancies/System Integrators
+      link: /partners/consultancies-system-integrators
+    - name: Technology Alliances
+      link: /partners/technology-alliances
+    - name: Managed Service Providers
+      link: /partners/managed-service-providers
+    - name: Solution Providers
+      link: /partners/solutions-providers
+    - name: Service Providers
+      link: /partners/service-providers
+    - name: Partner Locator
+      link: /partners/partner-locator
+    - name: PAM Organization
+      link: /partners/pam-organization
+    - name: Become a Partner
+      link: /partners/become-a-partner
+- name: About
+  link: /about
+  children:
+    - name: The Tanium Team
+      link: /about/the-tanium-team
+    - name: Careers
+      link: /about/careers
+    - name: Events
+      link: /about/events
+    - name: Investor Relations
+      link: /about/investor-relations
+    - name: News & Press
+      link: /about/news-and-press
+    - name: Blog
+      link: /about/blog
+    - name: Locations
+      link: /about/locations
+    - name: Contact Us
+      link: /about/contact-us

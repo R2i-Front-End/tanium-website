@@ -1,0 +1,55 @@
+{% assign pages = site.data.menus.main %}
+{% if include.data %}
+    {% assign pages = include.data %}
+{% endif %}
+
+<ul{% if include.class %} class="{{ include.class }}"{% endif %}>
+    {% for root in pages %}
+    <li>
+        {% if root.link %}
+        <a href="{{ root.link }}">
+            {% if root.icon %}
+            <span class="{{ root.icon }}"></span>
+            <span class="sr-only">{{ root.name }}</span>
+            {% else %}
+            {{ root.name }}
+            {% endif %}
+        </a>
+        {% if root.children %}
+        <input type="checkbox" id="menu{{ root.name | remove: " " }}" />
+        <label for="menu{{ root.name | remove: " " }}">
+            <span class="dt-only">Show {{ root.name }} Subpages</span>
+            <span class="fas fa-chevron-right"></span>
+        </label>
+        {% endif %}
+        {% else %}
+        <input type="checkbox" id="menu{{ root.name | remove: " " }}" />
+        <label for="menu{{ root.name | remove: " " }}">
+            {{ root.name }}
+        </label>
+        {% endif %}
+        {% if root.children %}
+        <ul>
+            {% for child in root.children %}
+            <li>
+                {% if child.link %}
+                <a href="{{ child.link }}">{{ child.name }}</a>
+                {% else %}
+                <span>{{ child.name }}</span>
+                {% endif %}
+                {% if child.children %}
+                <ul>
+                    {% for gc in child.children %}
+                    <li>
+                        <a href="{{ gc.link }}">{{ gc.name }}</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>

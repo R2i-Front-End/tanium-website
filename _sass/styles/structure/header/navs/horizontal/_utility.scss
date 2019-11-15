@@ -1,0 +1,205 @@
+/*  --------------------------------------------------------------------------  *\
+
+    HEADER - NAVIGATION - HORIZONTAL - UTILITY NAV
+
+\*  --------------------------------------------------------------------------  */
+.utility {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    
+    input[type="checkbox"] {
+        @include srOnly;
+    }
+        
+    a, label, button {
+        display: block;
+        color: $primary;
+
+        @include hover {
+            color: $accent-1;
+
+            &:after {
+                @include transform((translate(0, 25%) rotate(-45deg) rotate(180deg)));
+            }
+        }
+    }
+    
+    label {
+        
+        &:after {
+            display: inline-block;
+            @include transform(translate(0, -25%) rotate(-45deg));
+            margin: 0 0 0 .5rem;
+            height: .4rem;
+            width: .4rem;
+            border: .2rem solid transparent;
+            border-left-color: $primary;
+            border-bottom-color: $primary;
+            content: "";
+        }
+
+        @include hover {
+
+            &:after {
+                @include transform((translate(0, 25%) rotate(-45deg) rotate(180deg)));
+            }
+        }
+    }
+    
+    > li {
+        &:last-child {
+            a {
+                font-family: futura-pt-bold, Helvetica, sans-serif;
+                font-size: 1.4rem;
+                font-weight: 700;
+                text-transform: none;
+            }
+        }
+    }
+    
+    @media #{$mediaToggleHeader} {
+        padding: $gutterSm 3.5rem;
+            
+        > li {
+            + li {
+                margin: 3rem 0 0;
+            }
+            
+            &:last-child {
+                margin: 4.5rem 0 0;
+            }
+        }
+        
+        ul {
+            display: none;
+            margin: 3rem 1.5rem 0;
+            
+            li {
+                + li {
+                    margin: 1.5rem 0 0;
+                }
+            }
+        }
+        
+        input[type="checkbox"] {
+            
+            &:checked {
+                
+                + label {
+
+                    &:after {
+                        @include transform((translate(0, 25%) rotate(-45deg) rotate(180deg)));
+                    }
+                }
+                
+                ~ ul {
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @media #{$mediaFullHeader} {
+        @include flex(flex-end, center, null, row nowrap);
+        
+        > li {
+            @include position(relative, null);
+            padding: 0 .2rem;
+            
+            &:before {
+                display: block;
+                @include position(absolute, null, (left, top), (100%, 50%), translate(-50%, -50%));
+                width: .2rem;
+                height: 1.3rem;
+                background: $white;
+                content: "";
+            }
+            
+            &:hover {
+                ul {
+                    display: block;
+                }
+            }
+            
+            &:nth-last-child(-n + 2){
+                &:before {
+                    display: none;
+                }
+            }
+            
+            &:last-child {
+                a {
+                    background: $tertiary;
+                }
+            }
+        }
+        
+        a, label, button {
+            color: $white;
+            padding: 1.2rem;
+        }
+        
+        ul {
+            display: none;
+            @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 0));
+            text-transform: none;
+            font-size: 1.6rem;
+            font-weight: 700;
+            background: $white;
+            @include boxShadow((0 0 2.3rem rgba($black, .22)));
+            padding: 3.5rem;
+            text-align: center;
+            
+            li {
+                + li {
+                    margin: 2rem 0 0;
+                }
+            }
+            
+            a {
+                padding: 0;
+                display: inline;
+                color: $black;
+                
+                @include hover {
+                    color: $accent-1;
+                }
+            }
+        }
+        
+        label {
+            @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 50%));
+            background: $primary;
+            color: $white;
+            font-size: 1.2rem;
+        
+            &:after {
+                border-left-color: $white;
+                border-bottom-color: $white;
+            }
+            
+            &:not(:focus) {
+                @include srOnly();
+            }
+        }
+        
+        input[type="checkbox"] {
+            &:focus {
+                + label {
+                    display: block;
+                }
+            }
+            
+            &:checked {
+                + label {
+                    display: none;
+                }
+                
+                ~ ul {
+                    display: block;
+                }
+            }
+        }
+    }
+}

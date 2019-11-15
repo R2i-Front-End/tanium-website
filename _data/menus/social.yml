@@ -1,0 +1,9 @@
+- name: Facebook
+  link: /
+  icon: fab fa-facebook-f
+- name: Twitter
+  link: /
+  icon: fab fa-twitter
+- name: LinkedIn
+  link: /
+  icon: fab fa-linkedin-in

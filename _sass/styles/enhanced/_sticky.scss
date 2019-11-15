@@ -1,0 +1,11 @@
+/*  --------------------------------------------------------------------------  *\
+
+    STICKY ELEMENT
+
+    This shows examples of how we can make an element sticky, this is not a
+    component in and of itself, just an example.
+
+\*  --------------------------------------------------------------------------  */
+.sticky-figure {
+    @include position(sticky, null, (top), (50%), (translate(0, -50%)));
+}

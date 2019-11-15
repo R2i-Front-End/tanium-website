@@ -1,0 +1,22 @@
+<header>
+    <div class="cnt">
+        {% include structure/components/logo.html 
+            logo="/assets/images/tanium-logo.png" %}
+        <input type="checkbox" class="toggle" id="headerToggleNav" />
+        <label class="toggle-trigger" for="headerToggleNav">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="sr-only">Menu</span>
+        </label>
+        <nav>
+            {% include structure/components/menu.html 
+                class="main" %}
+            <div class="utility-bar">
+                {% include structure/components/menu.html 
+                    class="utility" 
+                    data=site.data.menus.utility %}
+            </div>
+        </nav>
+    </div>
+</header>

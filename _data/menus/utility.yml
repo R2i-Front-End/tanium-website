@@ -1,0 +1,14 @@
+- name: See Tanium Live
+  link: /see-tanium-live
+- name: Support
+  link: /support
+- name: Language
+  children: 
+  - name: English
+    link: /
+  - name: Francais
+    link: /fr
+  - name: Deutsch
+    link: /de
+- name: Contact Us
+  link: /about/contact-us

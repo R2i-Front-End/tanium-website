@@ -1,0 +1,35 @@
+/*  --------------------------------------------------------------------------  *\
+
+    FLIP CARD - DIRECTION - LEFT TO RIGHT
+
+\*  --------------------------------------------------------------------------  */
+&[data-direction="left-to-right"] {
+
+    .front {
+        @include transform(rotateY(0deg));
+    }
+
+    .back {
+        @include transform(rotateY(180deg));
+    }
+
+    @include hover {
+        .front {
+            @include transform(rotateY(180deg));
+        }
+
+        .back {
+            @include transform(rotateY(360deg));
+        }
+    }
+
+    &:focus-within {
+        .front {
+            @include transform(rotateY(180deg));
+        }
+
+        .back {
+            @include transform(rotateY(360deg));
+        }
+    }
+}

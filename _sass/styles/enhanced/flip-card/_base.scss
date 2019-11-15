@@ -1,0 +1,86 @@
+/*  --------------------------------------------------------------------------  *\
+
+    FLIP CARD
+
+    An animated version of the Card component that reveals the backside of
+    the card on Hover and Focus.
+
+\*  --------------------------------------------------------------------------  */
+.flip-card {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    
+    .front, .back {
+        @include transition((transform .5s cubic-bezier(.4, .2, .2, 1)));
+        @include backface(hidden);
+        @include transformStyle(preserve-3d);
+        border: .2rem solid $tertiary;
+    }
+    
+    .cnt {
+        @include position(absolute, null, (left, top), (50%, 50%), (translate3d(-50%, -50%, 50px) scale(.95)));
+        @include backface(hidden);
+        width: calc(100% - #{$gutter * 2});
+    }
+    
+    .back {
+        @include position(absolute, null, (left, top), (0, 0));
+        height: 100%;
+        width: 100%;
+        
+        &:not([class*="bg-"]) {
+            background: $white;
+        }
+    }
+    /*  ----------------------------------------------------------------------  *\
+
+    THIS APPLIES DEFAULT BEHAVIOR IF DIRECTION IS NOT APPLIED TO FLIP CARD
+
+    \*  ----------------------------------------------------------------------  */
+    &:not([data-direction]) {
+        
+        .front {
+            @include transform(rotateY(0deg));
+        }
+        
+        .back {
+            @include transform(rotateY(180deg));
+        }
+    
+        @include hover {
+            .front {
+                @include transform(rotateY(-180deg));
+            }
+
+            .back {
+                @include transform(rotateY(0deg));
+            }
+        }
+
+        &:focus-within {
+            .front {
+                @include transform(rotateY(-180deg));
+            }
+
+            .back {
+                @include transform(rotateY(0deg));
+            }
+        }
+    }
+    /*  ----------------------------------------------------------------------  *\
+
+    SIZES
+
+    \*  ----------------------------------------------------------------------  */
+    @import 'sizes/_sm';
+    @import 'sizes/_lg';
+    /*  ----------------------------------------------------------------------  *\
+
+    DIRECTIONS
+
+    \*  ----------------------------------------------------------------------  */
+    @import 'directions/_left-to-right';
+    @import 'directions/_right-to-left';
+    @import 'directions/_top-to-bottom';
+    @import 'directions/_bottom-to-top';
+}

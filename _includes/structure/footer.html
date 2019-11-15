@@ -1,0 +1,16 @@
+<footer>
+    <div class="cnt">
+        {% include structure/components/logo.html 
+            logo="/assets/images/tanium-logo-white.png" %}
+        {% include structure/components/menu.html 
+            class="social"
+            data=site.data.menus.social %}
+        <a href="/about/contact-us/">Contact</a>
+        {% include structure/components/menu.html 
+            class="sitemap"
+            data=site.data.menus.footer %}
+        <hr />
+        {% include structure/components/copyright.html %}
+        <a href="/terms-of-use">Terms of Use</a>
+    </div>
+</footer>

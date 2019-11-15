@@ -1,0 +1,23 @@
+/*  --------------------------------------------------------------------------  *\
+
+    HEADER - LOGO - SVG
+
+\*  --------------------------------------------------------------------------  */
+.logo {
+    display: block;
+    width: 13.5rem;
+    
+    @media #{$mediaFullHeader} {
+        width: 16rem;
+        @include flexItem(0, 0, auto);
+    }
+}
+
+&.stuck {
+    
+    .logo {
+        @media #{$mediaFullHeader} {
+            width: 13.5rem;
+        }
+    }
+}
