@@ -5,17 +5,19 @@
 \*  --------------------------------------------------------------------------  */
 & { 
     .toggle-trigger {
-        $barH: .6rem;
-        @include position(relative, null);
-        width: #{$gutter};
-        height: #{$barH * 6};
+        $barH: .4rem;
+        @include position(absolute, null, (right, top), (0, 0));
+        width: 7.5rem;
+        height: 100%;
+        border-left: .1rem solid $secondary-light;
         
         .bar {
             display: block;
             @include position(absolute, null, (left, top), (50%, 50%));
             height: $barH;
-            width: 100%;
+            width: 2rem;
             background: $primary;
+            border-radius: ($barH / 2);
             @include transition(transform .25s);
             
             &:nth-child(1) {
@@ -45,6 +47,8 @@
         
         &:checked {
             + .toggle-trigger {
+                background: $tertiary-light;
+                
                 .bar {
                     &:nth-child(1) {
                         width: 0;

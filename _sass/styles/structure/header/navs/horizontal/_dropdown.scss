@@ -4,10 +4,10 @@
 
 \*  --------------------------------------------------------------------------  */
 nav {
-    @include position(fixed, null, (left, top), (100%, 80px), translate(0, 0));
+    @include position(fixed, null, (left, top), (100%, 6.6rem), translate(0, 0));
     background: $white;
     width: 100%;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 6.6rem);
     @include transition(transform .25s);
     
     @media #{$mediaFullHeader} {
@@ -34,59 +34,83 @@ nav {
     }
     
     a, label, button {
-        display: block;
-        padding: #{$gutterSm / 2} #{$gutterSm};
+        font-family: futura-pt-bold, Helvetica, sans-serif;
+        font-weight: 700;
         color: $primary;
-        font-size: 1.4rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        white-space: nowrap;
-        
-        @include hover {
-            color: $secondary;
-        }
     }
     
     @media #{$mediaToggleHeader} {
-        border-top: 1px solid $primary;
-    
+        padding: 2rem 2rem 0;
+        
         > li {
             @include flex(space-between, stretch, null, row nowrap);
+            border-bottom: .1rem solid $tertiary;
             
-            a {
-                @include flexItem(0, 1, auto);
+            > a {
+                display: block;
+                padding: 1.5rem 3rem 1.5rem 1rem;
+                @include flex(0, 1, auto);
                 width: 100%;
             }
             
-            label {
+            > label {
                 @include flexItem(0, 0, auto);
-                width: auto;
-                background: $secondary;
-                color: $white;
+                @include flex(center, center, null);
+                width: 3rem;
+                color: $accent-1;
+            }
+        
+            > ul {
+                @include position(fixed, 100, (left, top), (100vw, 0));
+                height: calc(100vh - 7.7rem);
+                width: 100%;
+                padding: 2rem;
+                background: $white;
+                overflow: auto;
+                @include transition((transform .25s));
+                
+                > li {
+                    padding: 0 1.5rem;
+                    
+                    + li {
+                        border-top: .1rem solid $secondary-light;
+                        padding: 1.5rem 1.5rem 0;
+                        margin: 1.5rem 0 0;
+                    }
+                }
             }
         }
         
-        li {
-            
-            + li {
-                border-top: .1rem solid $primary;
-            }
-        }
-        
-        .toggle-text {
-            display: none;
-        }
-
         ul {
-            @include position(fixed, null, (left, top), (100%, 0));
-            height: calc(100vh - 80px);
-            @include transition(transform .25s);
-            width: 100%;
-            height: calc(100vh - 80px);
-            background: $white;
+            
+            li {
+                
+                + li {
+                    margin: 1rem 0 0;
+                }
+            }
+            
+            span:not(.fas) {
+                font-weight: 500;
+                color: $secondary;
+                text-transform: uppercase;
+            }
+            
+            .fas {
+                margin-right: 1.5rem;
+                color: $accent-1;
+            }
+            
+            ul {
+                margin: 2rem 0 0;
+            }
         }
         
-        input {
+        .dt-only {
+            @include srOnly();
+        }
+        
+        input[type="checkbox"] {
             &:checked {
                 ~ ul {
                     @include transform(translate(-100%, 0));
@@ -96,66 +120,6 @@ nav {
     }
     
     @media #{$mediaFullHeader} {
-        @include flex(flex-end, center, stretch, row nowrap);
-        @include transform(translate(0, 1rem));
         
-        li {
-            @include position(relative, null);
-            
-            &:hover {
-                ul {
-                    display: block;
-                }
-            }
-        }
-        
-        ul {
-            display: none;
-            @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 0));
-            min-width: 200px;
-            background: $white;
-            border: .1rem solid $primary;
-            text-align: center;
-            
-            > li {
-                
-                &:nth-child(-n + 2) {
-                    display: none;
-                }
-            
-                &:nth-child(n + 4) {
-                    border-top: .1rem solid $primary;
-                }
-            }
-        }
-        
-        label {
-            @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 50%));
-            background: $primary;
-            color: $white;
-            font-size: 1.2rem;
-            
-            &:not(:focus) {
-                @include srOnly();
-            }
-        }
-        
-        input[type="checkbox"] {
-            &:focus {
-                + label {
-                    display: block;
-                }
-            }
-            
-            &:checked {
-                + label {
-                    display: none;
-                }
-                
-                ~ ul {
-                    display: block;
-                }
-            }
-        }
     }
 }

@@ -30,6 +30,14 @@
         {% endif %}
         {% if root.children %}
         <ul>
+            {% if include.class == "main" %}
+            <li>
+                <label for="menu{{ root.name | remove: " " }}">
+                    <span class="fas fa-chevron-left"></span>
+                    {{ root.name }}
+                </label>
+            </li>
+            {% endif %}
             {% for child in root.children %}
             <li>
                 {% if child.link %}
