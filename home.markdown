@@ -55,6 +55,7 @@ about:
       link: "/#"
       copy: 
       class: 
+  class: 
 customers:
   eyebrow: Customers
   title: Proven in Top Industries and Organizations
@@ -71,6 +72,7 @@ customers:
     link: "/#"
     copy: View Customer Success
     class: 
+  class: bg-secondary-light
 resources:
   eyebrow: Resources
   title: Latest Thinking
