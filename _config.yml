@@ -43,7 +43,8 @@ defaults:
       cta:
         link: ''
         text: ''
-      image: ''
+      image_mobile: ''
+      image_desktop: ''
       class: ''
     bottomCTA:
       eyebrow: ''
@@ -89,7 +90,8 @@ defaults:
       cta:
         link: ''
         text: ''
-      image: ''
+      image_mobile: ''
+      image_desktop: ''
       imageLocation: ''
     solutions:
       eyebrow: Solutions
