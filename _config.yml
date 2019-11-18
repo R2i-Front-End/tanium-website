@@ -39,7 +39,7 @@ defaults:
     hero:
       title: ''
       copy: ''
-      icon: ''
+      icon image: ''
       cta:
         link: ''
         copy: ''
