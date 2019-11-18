@@ -2,14 +2,16 @@
   link: /resources
 - name: Security Certifications & Standards
   link: /security-certifications-and-standards
-- name: Security Engineering/ Vulnerability Reporting
-  link: /security-engineering
 - name: Privacy Policy
   link: /privacy-policy
+- name: Security Engineering/ Vulnerability Reporting
+  link: /security-engineering
+- name: Cookie Statement
+  link: /cookie-statement
 - name: Cookie Preferences
   link: /cookie-preferences
 - name: Trademarks
   link: /trademarks
-- name: Terms of Use
-  link: /terms-of-use
+- name: Accessibility Statement
+  link: /accessibility-statement
   

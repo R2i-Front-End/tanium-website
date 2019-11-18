@@ -4,6 +4,7 @@
 
 \*  --------------------------------------------------------------------------  */
 .sitemap {
+    @include clear();
     margin: $gutterSm 0;
     @include multicolumn($c: 2, $g: $gutterSm, $r: .1rem solid $white);
     font-family: futura-pt-bold, Helvetica, sans-serif;
@@ -17,5 +18,23 @@
         + li {
             margin: .5em 0;
         }
+    }
+    
+    @media #{$mediaMd} {
+        @include multicolumn($c: 3, $g: null, $r: null);
+        margin: 0;
+        padding: ($gutterSm * 1.5) 0;
+
+        li {
+            margin: 1.5em 0;
+
+            + li {
+                margin: 1.5em 0;
+            }
+        }
+    }
+    
+    @media #{$mediaLg} {
+        @include multicolumn($c: 4, $g: null, $r: null);
     }
 }

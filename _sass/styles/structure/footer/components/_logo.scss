@@ -5,6 +5,13 @@
 \*  --------------------------------------------------------------------------  */
 .logo {
     display: block;
+    width: 100%;
     max-width: 19rem;
     margin: 0 auto ($gutterSm * .5);
+        
+    @media #{$mediaMd} {
+        float: left;
+        max-width: 25rem;
+        margin: 0;
+    }
 }

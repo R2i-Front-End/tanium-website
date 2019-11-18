@@ -16,8 +16,11 @@ body>footer {
         max-width: $siteWMx;
         @include setW();
         
-        @media #{$mediaFullHeader} {
-            @include flex(space-between, center, null, row wrap);
+        @media #{$mediaMd} {
+            @include clearfix;
+        }
+        
+        @media #{$mediaLg} {
             padding: 0 #{$gutter * .5};
         }
     }

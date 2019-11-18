@@ -5,4 +5,17 @@
 \*  --------------------------------------------------------------------------  */
 .copyright {
     margin: 0 0 1.5rem;
+
+    + a {
+        text-decoration: underline;
+    }
+    
+    @media #{$mediaMd} {
+        display: inline-block;
+        margin: 0 $gutterSm 0 0;
+
+        + a {
+            display: inline-block;
+        }
+    }
 }

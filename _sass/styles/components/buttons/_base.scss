@@ -11,7 +11,7 @@
 [class*="btn-"] {
     display: block;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.5rem 3rem;
     margin: 0;
     border: .2rem solid $accent-1;
     border-radius: 2.7rem;
@@ -29,6 +29,16 @@
         border-color: currentColor;
         background: $white;
         color: $accent-1;
+    }
+    
+    @media #{$mediaMd} {
+        display: inline-block;
+        width: auto;
+        padding: 1.5rem 4.75rem;
+    }
+    
+    @media #{$mediaLg} {
+        padding: 1.5rem 6.5rem;
     }
 }
 /*  --------------------------------------------------------------------------  *\
