@@ -143,16 +143,27 @@ nav {
             }
         
             > ul {
-                @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 0));
                 display: none;
+                @include position(absolute, null, (left, top), (50%, 100%), translate(-50%, 0));
+                padding: 3.5rem;
                 background: $white;
-                @include boxShadow(0 0 2.5rem rgba($black, .25));
+                @include boxShadow(0 2.5rem 2.5rem rgba($black, .25));
                 
                 > li {
                     
                     &:first-child {
                         display: none;
                     }
+                    
+                    &:nth-child(n + 3) {
+                        margin: 1.5rem 0 0;
+                    }
+                }
+            }
+            
+            &:hover {
+                > ul {
+                    display: block;
                 }
             }
                 
@@ -175,9 +186,10 @@ nav {
                     @include boxShadow(none);
                     width: 100%;
                     max-width: $siteWMx;
+                    padding: 0;
                 
                     > li {
-                        padding: 3rem;
+                        padding: 3.5rem;
                         @include flexItem(1, 0, auto);
                         max-width: 21.5rem;
                         width: 33.333%;
@@ -185,6 +197,7 @@ nav {
 
                         + li {
                             border-left: .1rem solid $secondary-light;
+                            margin: 0;
                         }
                     
                         &:nth-child(2) {
@@ -196,6 +209,15 @@ nav {
                                 margin: 1.5rem 0 0;
                             }
                         }
+                    }
+                    
+                    &:before {
+                        @include position(absolute, -1, (left, top), (50%, 0), translate(-50%, 0));
+                        height: 100%;
+                        width: 100vw;
+                        background: $white;
+                        @include boxShadow(0 2.5rem 2.5rem rgba($black, .25));
+                        content: "";
                     }
                 }
                 
