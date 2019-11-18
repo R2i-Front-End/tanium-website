@@ -12,6 +12,13 @@ hero:
   mobile image: "/uploads/home-mobile.png"
   desktop image: "/uploads/home-desktop.png"
   class: home
+bottomCTA:
+  eyebrow: More About Tanium
+  title: Join our weekly webinar.
+  cta:
+    link: "/see-tanium-live"
+    copy: See Tanium Live
+  image: "/uploads/cta-bottom-1.png"
 about:
   eyebrow: About
   title: The Power of Tanium
@@ -22,42 +29,35 @@ about:
     copy: Watch video
     class: btn-secondary
   highlights:
-    highlight 1:
-      icon image: 
-      title: Unparalleled speed, visibility and control at scale
-      text: Tanium enables IT to address the complexity of large, distributed networks
-        through current and complete endpoint visibility and control, at scale.
-    highlight 2:
-      icon image: 
-      title: Exceptional focus on customer success
-      text: Tanium partners with every customer through dedicated, personalized service
-        and an unstoppable culture focused on driving outcomes for every client.
-    highlight 3:
-      icon image: 
-      title: "Flexible platform and expanding portfolio of \x03advanced solutions"
-      text: Designed to provide strategic value, Tanium’s approach enables product
-        solutions that are powerful and can evolve with the growth of your business.
-    highlight 4:
-      icon image: 
-      title: Proven in top enterprises and organizations
-      text: Tanium provides manageability and security to the world’s most technically
-        demanding enterprises and organizations, including half of the Fortune 100
-        and four out of five US military branches.
+  - icon image: 
+    title: Unparalleled speed, visibility and control at scale
+    text: Tanium enables IT to address the complexity of large, distributed networks
+      through current and complete endpoint visibility and control, at scale.
+  - icon image: 
+    title: Exceptional focus on customer success
+    text: Tanium partners with every customer through dedicated, personalized service
+      and an unstoppable culture focused on driving outcomes for every client.
+  - icon image: 
+    title: "Flexible platform and expanding portfolio of \x03advanced solutions"
+    text: Designed to provide strategic value, Tanium’s approach enables product solutions
+      that are powerful and can evolve with the growth of your business.
+  - icon image: 
+    title: Proven in top enterprises and organizations
+    text: Tanium provides manageability and security to the world’s most technically
+      demanding enterprises and organizations, including half of the Fortune 100 and
+      four out of five US military branches.
 customers:
   eyebrow: Customers
   title: Proven in Top Industries and Organizations
   text: Many of the largest and most respected organizations in the world re-platformed
     endpoint security and management with Tanium.
   facts:
-    fact 1:
-      figure: 12
-      copy: of the top 15 US banks
-    fact 2:
-      figure: 6
-      copy: of the top 10 retailers
-    fact 3:
-      figure: 4
-      copy: of the 5 US Armed Forces
+  - figure: 12
+    copy: of the top 15 US banks
+  - figure: 6
+    copy: of the top 10 retailers
+  - figure: 4
+    copy: of the 5 US Armed Forces
   cta:
     link: "/#"
     copy: View Customer Success
@@ -100,13 +100,6 @@ success:
     link: "/#"
     copy: Explore community
     class: 
-bottomCTA:
-  eyebrow: More About Tanium
-  title: Join our weekly webinar.
-  cta:
-    link: "/see-tanium-live"
-    copy: See Tanium Live
-  image: "/uploads/cta-bottom-1.png"
 layout: home
 ---
 
