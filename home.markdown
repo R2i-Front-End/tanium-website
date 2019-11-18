@@ -12,6 +12,11 @@ hero:
   mobile image: "/uploads/home-mobile.png"
   desktop image: "/uploads/home-desktop.png"
   class: home
+bottomCTA:
+  eyebrow: More About Tanium
+  title: Join our weekly webinar.
+  cta:
+    link: "/#"
 layout: home
 ---
 
