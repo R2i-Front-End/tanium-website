@@ -53,7 +53,7 @@ about:
       and at scale.
     cta:
       link: "/#"
-      copy: 
+      copy: Explore Now
       class: 
   class: 
 customers:
