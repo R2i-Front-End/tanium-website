@@ -52,6 +52,7 @@ defaults:
       cta:
         link: ''
         copy: ''
+        class: ''
       image: ''
       imageLocation: ''
 - scope:
@@ -80,30 +81,79 @@ defaults:
       class: product bg-primary-lt
     intro:
       eyebrow: ''
+      text: ''
+      video:
+        title: ''
+        video: ''
+        caption: ''
+    benefits:
+      eyebrow: ''
       title: ''
-      copy: ''
-      facts:
-        fact:
-          figure: ''
-          copy: ''
-    callout:
+      benefits:
+        - icon image: ''
+          title: ''
+          text: ''
+        - icon image: ''
+          title: ''
+          text: ''
+        - icon image: ''
+          title: ''
+          text: ''
+      cta: 
+        link: ''
+        copy: ''
+        class: ''
+      class: ''
+    features:
+      eyebrow: ''
       title: ''
-      copy: ''
+      features:
+        - title: ''
+          text: ''
+        - title: ''
+          text: ''
+        - title: ''
+          text: ''
+      cta1:
+        link: ''
+        copy: ''
+        class: ''
+      cta2:
+        link: ''
+        copy: ''
+        class: ''
+    products:
+      eyebrow: 'Products'
+      title: 'Explore Related Products Lorem Ipsum Dolor Sit'
+      products:
+        - title: ''
+          icon image: ''
+        - title: ''
+          icon image: ''
+        - title: ''
+          icon image: ''
+        - title: ''
+          icon image: ''
       cta:
         link: ''
         copy: ''
-      image_mobile: ''
-      image_desktop: ''
+        class: ''
+    resources:
+      eyebrow: 'Resources'
+      title: 'Related Content'
+      count: '3'
+      cta:
+        link: ''
+        copy: 'View all content'
+        class: 'btn-primary'
+    bottomCTA:
+      eyebrow: 'Next step'
+      title: 'Ready to get started?'
+      cta:
+        link: ''
+        copy: 'Schedule a demo'
+      image: ''
       imageLocation: ''
-    solutions:
-      eyebrow: Solutions
-      title: Challenges We Solve
-      cta:
-        link: ''
-        copy: ''
-    industries:
-      eyebrow: Industries
-      title: Explore Taniums Industries
 permalink: pretty
 copyright: "&copy; 2019 Tanium Inc. All rights reserved. Tanium is a registered trademark
   of Tanium Inc. All other trademarks herein are the property of their respective
