@@ -4,16 +4,11 @@
 
 \*  --------------------------------------------------------------------------  */
 .social {
-    margin: 0;
+    margin: 0 auto ($gutterSm * .75);
     font-size: 1.25em;
-    
-    ul {
-        @include flex(flex-start, center, null, row nowrap);
-    }
+    @include flex(center, center, null, row nowrap);
     
     li {
-        + li {
-            margin: 0 0 0 #{$gutterSm};
-        }
+        margin: 0 1.25rem;
     }
 }

@@ -4,4 +4,18 @@
 
 \*  --------------------------------------------------------------------------  */
 .sitemap {
+    margin: $gutterSm 0;
+    @include multicolumn($c: 2, $g: $gutterSm, $r: .1rem solid $white);
+    font-family: futura-pt-bold, Helvetica, sans-serif;
+    font-weight: 700;
+    
+    li {
+        display: inline-block;
+        width: 100%;
+        margin: .5em 0;
+        
+        + li {
+            margin: .5em 0;
+        }
+    }
 }

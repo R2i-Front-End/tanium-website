@@ -9,49 +9,27 @@
 
 \*  --------------------------------------------------------------------------  */
 [class*="btn-"] {
-    // POSITIONING (DISPLAY, FLEX, FLEX ITEM, POSITION, LEFT, TOP, TRANSFORM)
-    display: inline-block;
-    // BOX SIZING (WIDTH, HEIGHT, MARGIN, PADDING)
-    padding: #{$gutterSm / 2} #{$gutterSm};
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
     margin: 0;
-    // BOX STYLING (OPACITY, BACKGROUND, BOX SHADOW, BORDER, BORDER RADIUS, OVERFLOW)
-    border: .2rem solid $primary;
+    border: .2rem solid $accent-1;
+    border-radius: 2.7rem;
     background: $accent-1;
-    // FONT STYLING (FONT, FONT-FAMILY, FONT-STYLE, FONT-SIZE, LINE-HEIGHT, FONT-WEIGHT)
-    color: $primary;
-    font-family: $headingFF;
-    font-weight: 800;
-    @include fontSize(1.4, 1.25);
-    // TEXT STYLING (TEXT-DECORATION, TEXT-TRANSFORM, TEXT-ALIGN, TEXT-SHADOW)
-    letter-spacing: 1pt;
+    color: $white;
+    font-family: futura-pt-bold, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.25;
+    text-align: center;
     text-decoration: none;
-    text-transform: uppercase;
-    // OTHER (TRANSITONS, ANIMATIONS, CURSOR)
     transition: all .25s;
     
-    // WHEN DEFINING HOVER, BE SURE TO ADD , &:focus TO STYLE THE FOCUS STATE OF THE ELEMENT     
-    // AS WELL.  THIS IS EXTREMELY IMPORTANT TO MEET WCAG 2.1 LEVEL AA COMPLIANCE
     @include hover {
-        // POSITIONING (DISPLAY, FLEX, FLEX ITEM, POSITION, LEFT, TOP, TRANSFORM)
-        // BOX SIZING (WIDTH, HEIGHT, MARGIN, PADDING)
-        // BOX STYLING (OPACITY, BACKGROUND, BOX SHADOW, BORDER, BORDER RADIUS, OVERFLOW)
         border-color: currentColor;
-        background: $primary;
-        // FONT STYLING (FONT, FONT-FAMILY, FONT-STYLE, FONT-SIZE, LINE-HEIGHT, FONT-WEIGHT)
+        background: $white;
         color: $accent-1;
-        // TEXT STYLING (TEXT-DECORATION, TEXT-TRANSFORM, TEXT-ALIGN, TEXT-SHADOW)
-        // OTHER (TRANSITONS, ANIMATIONS, CURSOR)
     }
-    
-    /*  ----------------------------------------------------------------------  *\
-
-        Button Arrow Options
-
-    \*  ----------------------------------------------------------------------  */
-    @import 'icon/_icon-top';
-    @import 'icon/_icon-bottom';
-    @import 'icon/_icon-left';
-    @import 'icon/_icon-right';
 }
 /*  --------------------------------------------------------------------------  *\
 
@@ -65,16 +43,3 @@
 @import 'colors/_success';
 @import 'colors/_danger';
 @import 'colors/_warning';
-/*  --------------------------------------------------------------------------  *\
-
-    Buttons Animation Options
-
-\*  --------------------------------------------------------------------------  */
-@import 'animations/_base';
-@import 'animations/_fill';
-@import 'animations/_press';
-@import 'animations/_effects/_effect-1';
-@import 'animations/_effects/_effect-2';
-@import 'animations/_effects/_effect-3';
-@import 'animations/_effects/_effect-4';
-@import 'animations/_effects/_effect-5';

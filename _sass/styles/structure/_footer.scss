@@ -5,38 +5,39 @@
 \*  --------------------------------------------------------------------------  */
 .cl-footer, // DELETE THIS FOR NON CL PROJECTS
 body>footer {
-    padding: #{$gutterSm} 0;
-    background: $secondary;
+    padding: $gutterSm 0;
+    background: $primary;
     color: $white;
-    
-    @media #{$mediaMd} {
-        padding: #{$gutter} 0;
-    }
+    font-size: 1.2rem;
     
     > div {
-        @include flex(space-between, center, null, row wrap);
         margin: 0 auto;
-        padding: 0 #{$gutterSm * .5};
+        padding: 0 ($gutterSm * .5);
         max-width: $siteWMx;
         @include setW();
         
         @media #{$mediaFullHeader} {
+            @include flex(space-between, center, null, row wrap);
             padding: 0 #{$gutter * .5};
         }
+    }
+    
+    a {
+        color: $white;
+        text-decoration: none;
         
-        + div {
+        @include hover {
+            color: $accent-1;
+            text-decoration: underline;
+        }
+    }
+    
+    ul {
+        li {
+            padding: 0;
             
             &:before {
-                @include flexItem(0, 0, auto);
-                display: block;
-                width: 100%;
-                margin: #{$gutterSm} auto;
-                border-top: .2rem solid $white;
-                content: "";
-            }
-            
-            @media #{$mediaMd} {
-                margin: #{$gutter} auto;
+                display: none;
             }
         }
     }
@@ -45,6 +46,8 @@ body>footer {
         COMPONENTS
 
     \*  ----------------------------------------------------------------------  */
+    @import 'footer/components/_logo';
+    @import 'footer/components/_separator';
     @import 'footer/components/_copyright';
     /*  ----------------------------------------------------------------------  *\
 
