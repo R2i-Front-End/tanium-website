@@ -1,6 +1,7 @@
 ---
 title: Home
 date: 2019-11-13 12:33:00 Z
+permalink: "/"
 position: 6
 hero:
   title: Unify management and security of endpoints, everywhere. Instantly.
