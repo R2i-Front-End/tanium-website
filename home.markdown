@@ -13,84 +13,92 @@ hero:
   desktop image: "/uploads/home-desktop.png"
   class: home
 about:
-  eyebrow: 
-  title: 
-  text: 
+  eyebrow: About
+  title: The Power of Tanium
+  text: Tanium is a unified endpoint management and security platform built for the
+    world’s most demanding IT environments.
   cta:
-    link: 
-    copy: 
-    class: 
+    link: "/#"
+    copy: Watch video
+    class: btn-secondary
   highlights:
     highlight 1:
       icon image: 
-      title: 
-      text: 
+      title: Unparalleled speed, visibility and control at scale
+      text: Tanium enables IT to address the complexity of large, distributed networks
+        through current and complete endpoint visibility and control, at scale.
     highlight 2:
       icon image: 
-      title: 
-      text: 
+      title: Exceptional focus on customer success
+      text: Tanium partners with every customer through dedicated, personalized service
+        and an unstoppable culture focused on driving outcomes for every client.
     highlight 3:
       icon image: 
-      title: 
-      text: 
+      title: "Flexible platform and expanding portfolio of \x03advanced solutions"
+      text: Designed to provide strategic value, Tanium’s approach enables product
+        solutions that are powerful and can evolve with the growth of your business.
     highlight 4:
       icon image: 
-      title: 
-      text: 
+      title: Proven in top enterprises and organizations
+      text: Tanium provides manageability and security to the world’s most technically
+        demanding enterprises and organizations, including half of the Fortune 100
+        and four out of five US military branches.
 customers:
-  eyebrow: 
-  title: 
-  text: 
+  eyebrow: Customers
+  title: Proven in Top Industries and Organizations
+  text: Many of the largest and most respected organizations in the world re-platformed
+    endpoint security and management with Tanium.
   facts:
     fact 1:
-      figure: 
-      copy: 
+      figure: 12
+      copy: of the top 15 US banks
     fact 2:
-      figure: 
-      copy: 
+      figure: 6
+      copy: of the top 10 retailers
     fact 3:
-      figure: 
-      copy: 
+      figure: 4
+      copy: of the 5 US Armed Forces
   cta:
-    link: 
-    copy: 
+    link: "/#"
+    copy: View Customer Success
     class: 
 resources:
-  eyebrow: 
-  title: 
-  amount: 
+  eyebrow: Resources
+  title: Latest Thinking
+  amount: 3
   cta:
-    link: 
-    copy: 
+    link: "/#"
+    copy: View all articles
     class: 
 success:
-  eyebrow: 
-  title: 
-  text: 
+  eyebrow: Customer Success
+  title: Tanium Community
+  text: Engage with Tanium’s team and other Tanium users to ask questions, learn about
+    best practices, pass on feedback to our product team and more.
   quick links:
     link 1:
       icon image: 
-      title: 
+      title: Tanium Discussions
       copy: 
-      link: 
+      link: "/#"
     link 2:
       icon image: 
-      title: 
+      title: Ask the Experts
       copy: 
-      link: 
+      link: "/#"
     link 3:
       icon image: 
-      title: 
+      title: Tanium Blog
       copy: 
-      link: 
+      link: "/#"
     link 4:
       icon image: 
-      title: 
+      title: Best Practices
       copy: 
-      link: 
+      link: "/#"
   cta:
-    link: 
-    copy: 
+    link: "/#"
+    copy: Explore community
     class: 
 bottomCTA:
   eyebrow: More About Tanium
