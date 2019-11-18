@@ -8,7 +8,6 @@ hero:
   copy: Drive efficiency and take control like never before.
   cta:
     link: "/#"
-    text: See Tanium in Action
 layout: home
 ---
 
