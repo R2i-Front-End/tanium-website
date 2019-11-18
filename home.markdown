@@ -9,6 +9,7 @@ hero:
   cta:
     link: "/#"
     text: See Tanium in Action
+  image: "/uploads/home-desktop.png"
 layout: home
 ---
 
