@@ -81,6 +81,7 @@ resources:
     link: "/#"
     copy: View all articles
     class: 
+  class: 
 success:
   eyebrow: Customer Success
   title: Tanium Community
@@ -107,6 +108,7 @@ success:
     link: "/#"
     copy: Explore community
     class: 
+  class: bg-secondary
 layout: home
 ---
 
