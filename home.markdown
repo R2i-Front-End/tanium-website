@@ -11,6 +11,7 @@ hero:
     copy: See Tanium in Action
   mobile image: "/uploads/home-mobile.png"
   desktop image: "/uploads/home-desktop.png"
+  class: home
 layout: home
 ---
 
