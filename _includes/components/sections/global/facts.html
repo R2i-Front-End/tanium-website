@@ -1,0 +1,28 @@
+<section class="{{ facts.class }}">
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                <h2>
+                    <small class="eyebrow">{{ facts.eyebrow }}</small>
+                    {{ facts.title }}
+                </h2>
+                <div class="row ha-center">
+                    <div class="co-xs-12 col-lg-8">
+                        <p class="intro">{{ facts.text }}</p>
+                    </div>
+                </div>
+                <ul class="list-facts">
+                    {% for fact in facts.facts %}
+                    <li class="fact">
+                        <h3>
+                            <strong>{{ fact.figure }}</strong>
+                            {{ fact.copy }}
+                        </h3>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <a href="{{ facts.cta.link }}" class="{% if facts.cta.class %}{{ facts.cta.class }}{% else %}btn-primary{% endif %}">{{ facts.cta.copy }}</a>
+            </div>
+        </div>
+    </div>
+</section>

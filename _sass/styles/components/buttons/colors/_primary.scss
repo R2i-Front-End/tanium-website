@@ -9,8 +9,8 @@
     color: $white;
     
     @include hover {
-        border-color: $accent-1;
-        background: $white;
-        color: $accent-1;
+        border-color: $accent-3;
+        background: $accent-3;
+        color: $white;
     }
 }

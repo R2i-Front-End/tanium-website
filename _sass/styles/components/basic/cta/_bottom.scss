@@ -1,0 +1,57 @@
+/*  --------------------------------------------------------------------------  *\
+
+    CALL TO ACTION > BOTTOM 
+
+\*  --------------------------------------------------------------------------  */
+&.bottom {
+    padding: $gutter 0;
+    background: $primary-light;
+    overflow: hidden;
+    
+    @media #{$mediaMd} {
+        padding: ($gutter * 2.5) 0 ($gutter * 1.5);
+    }
+    
+    @media #{$mediaLg} {
+        padding: ($gutter * 5) 0 ($gutter * 3);
+    }
+    
+    img {
+        display: none;
+        @include position(absolute, 0, (left, top), (0, 50%), translate(-15%, -41.667%));
+        width: 50%;
+        max-width: 65rem;
+        
+        @media #{$mediaMd} {
+            display: block;
+        }
+    }
+    
+    h2 {
+        font-family: futura-pt-bold, Helvetica, sans-serif;
+        font-weight: 700;
+    }
+    
+    .cnt {
+        @include position(relative, null);
+        
+        > div {
+            @include position(relative, 100);
+            width: 50%;
+            margin: 0 0 0 50%;
+        }
+    }
+    
+    &.alt {
+        .cnt {
+            > div {
+                margin: 0;
+            }
+        }
+        
+        img {
+            left: 100%;
+            @include transform(translate(-85%, -41.667%));
+        }
+    }
+}

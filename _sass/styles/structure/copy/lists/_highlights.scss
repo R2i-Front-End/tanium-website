@@ -1,0 +1,28 @@
+/* CSS Document */
+.list-hilights {
+    @media #{$mediaMd} {
+        @include flex(space-between, flex-start, flex-start, row wrap);
+        margin: $gutter ($gutter * .5) 0;
+    }
+    
+    li {
+        padding: 0;
+        
+        &:before {
+            display: none;
+        }
+        
+        + li {
+            margin: 0;
+        }
+        
+        @media #{$mediaMd} {
+            @include flexItem(0, 0, auto);
+            width: calc(50% - #{$gutter * .5});
+            
+            &:nth-child(n + 3) {
+                margin: $gutterSm 0 0;
+            }
+        }
+    }
+}

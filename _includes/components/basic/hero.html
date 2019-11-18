@@ -1,16 +1,22 @@
-<header class="hero {{ page.hero.class }}">
+{% assign hero = page.hero %}
+
+<header class="hero {{ hero.class }}">
     <div class="cnt">
-        <div>
-            <h1>{{ page.hero.title }}</h1>
-            <p class="intro">{{ page.hero.copy }}</p>
+        <div class="row ha-right va-center">
+            <div class="col-xs-12 col-md-8 col-lg-6">
+                <h1>{{ hero.title }}</h1>
+                <p class="intro">{{ hero.copy }}</p>
+                {% if hero.cta.link %}
+                <a href="{{ hero.cta.link }}" class="{% if hero.cta.class %}{{ her.cta.class }}{% else %}btn-primary{% endif %}">{{ hero.cta.copy }}</a>
+                {% endif %}
+            </div>
+            <div class="col-xs-12 col-md-4 col-md-6 offset">
+                <picture>
+                    <source media="(max-width: 600px)" srcset="{{ hero['mobile image'] }}">
+                    <source media="(min-width: 601px)" srcset="{{ hero['desktop image'] }}">
+                    <img src="{{ hero['desktop image'] }}" alt="Alt text here" />
+                </picture>
+            </div>
         </div>
-        <picture>
-            <source media="(max-width: 600px)" srcset="{{ page.hero['mobile image'] }}">
-            <source media="(min-width: 601px)" srcset="{{ page.hero['desktop image'] }}">
-            <img src="{{ page.hero['desktop image'] }}" alt="Alt text here" />
-        </picture>
-        {% if page.hero.cta.link %}
-        <a href="{{ page.hero.cta.link }}" class="{% if page.hero.cta.class %}{{ cta[class] }}{% else %}btn-primary{% endif %}">{{ page.hero.cta.copy }}</a>
-        {% endif %}
     </div>
 </header>

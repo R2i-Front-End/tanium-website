@@ -4,44 +4,20 @@
 
 \*  --------------------------------------------------------------------------  */
 &.home {
+    .row {
+        flex-flow: row nowrap;
+    }
+        
+    .offset {
+        margin: 0 -8.333% 0 0;
+    }
+    
     .cnt {
         @include position(relative, null);
         
-        > div {
-            @include position(relative, 100);
-            width: 66.667%;
-            overflow: hidden;
-            margin: 0 0 3rem;
-            
-            @media #{$mediaMd} {
-                width: 58.333%;
-                margin: 0 0 4.5rem;
-            }
-            
-            @media #{$mediaXl} {
-                width: calc(58.333% + #{$gutter});
-                margin: 0 0 6rem calc(8.333% - #{$gutter});
-                
-                ~ [class*="btn-"] {
-                    margin-left: calc(8.333% - #{$gutter});
-                }
-            }
-        }
-        
         picture {
-            width: 40%;
-            max-width: 61.5rem;
-            @include position(absolute, 0, (left, top), (100%, -1rem), translate(-90%, 0));
-            
-            @media #{$mediaLg} {
-                width: 50%;
-                top: 50%;
-                @include transform(translate(-85%, -50%));
-            }
-            
-            @media #{$mediaXl} {
-                @include transform((translate(-75%, -50%) translate(#{$gutter * 1}, 0)));
-            }
+            width: calc(100% + #{$gutter * 2});
+            margin: 0 ($gutter * -1) 0 0;
         }
     }
 }

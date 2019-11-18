@@ -1,0 +1,79 @@
+/*  --------------------------------------------------------------------------  *\
+
+    NAV - QUICK LINKS
+
+\*  --------------------------------------------------------------------------  */
+&.quick-links {
+    ul {
+        @media #{$mediaMd} {
+            @include flex(space-between, stretch, null, row wrap);
+        }
+    }
+    
+    li {
+        padding: 0;
+        
+        + li {
+            margin: 1.5rem 0 0;
+        }
+        
+        @media #{$mediaMd} {
+            @include flexItem(0, 0, auto);
+            width: calc(50% - #{$gutter * .5});
+            margin: 0 ($gutter * .25);
+            
+            + li {
+                margin: 0 ($gutter * .25);
+            }
+            
+            &:nth-child(n + 3) {
+                margin-top: ($gutter * .5);
+            }
+        }
+    }
+    
+    a {
+        display: block;
+        @include clearfix();
+        padding: 1.5rem 1rem;
+        background: $secondary-light;
+        color: $primary;
+    }
+    
+    img {
+        float: left;
+        width: 4rem;
+        margin: 0 2rem 0 0;
+    }
+    
+    h3 {
+        float: left;
+        margin: 0;
+        line-height: 3rem;
+    }
+    
+    .fas {
+        float: right;
+        line-height: 3rem;
+    }
+    
+    p {
+        display: none;
+    }
+    
+    @media #{$mediaMd} {
+        text-align: center;
+        
+        img, h3 {
+            margin: 0 auto 3rem;
+        }
+        
+        img, h3, .fas {
+            float: none;
+        }
+        
+        .fas {
+            color: $accent-1;
+        }
+    }
+}

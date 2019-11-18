@@ -1,0 +1,32 @@
+<section class="{{ quicklinks.class }}">
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                <div class="row">
+                    <div class="col-xs-12 col-md-6">
+                        <h2>
+                            <small class="eyebrow">{{ quicklinks.eyebrow }}</small>
+                            {{ quicklinks.title }}
+                        </h2>
+                        <p class="intro">{{ quicklinks.text }}</p>
+                        <a href="{{ quicklinks.cta.link }}" class="{% if quicklinks.cta.class %}{{ quicklinks.cta.class }}{% else %}btn-primary{% endif %}">{{ quicklinks.cta.copy }}</a>
+                    </div>
+                    <nav class="col-xs-12 col-md-6 quick-links">
+                        <ul>
+                            {% for quicklink in quicklinks["quick links"] %}
+                            <li class="quick-link">
+                                <a href="{{ quicklink.link }}">
+                                    <img src="{{ quicklink["icon image"]}}" alt="Icon {{ quicklink.title }}" />
+                                    <h3 class="h5">{{ quicklink.title }}</h3>
+                                    <p>{{ quicklink.copy }}</p>
+                                    <span class="fas fa-arrow-right"></span>
+                                </a>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

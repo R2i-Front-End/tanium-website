@@ -1,0 +1,12 @@
+<div class="cta bordered small">
+    <div>
+        <h3 class="h5{% if announcement["icon image"] %} has-icon{% endif %}">
+            {% if announcement["icon image"] %}
+            <img src="{{ announcement["icon image"] }}" alt="Icon {{ announcement.title }}" />
+            {% endif %}
+            {{ announcement.title }}
+        </h3>
+        <p>{{ announcement.text }}</p>
+    </div>
+    <a href="{{ announcement.cta.link }}" class="{% if announcement.cta.class %}{{ announcement.cta.class }}{% else %}btn-primary{% endif %}">{{ announcement.cta.copy }}</a>
+</div>

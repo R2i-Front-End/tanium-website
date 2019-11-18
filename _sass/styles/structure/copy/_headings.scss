@@ -4,7 +4,7 @@
 
 \*  --------------------------------------------------------------------------  */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    margin: 0 0 #{$gutterSm};
+    margin: 0 0 ($gutterSm * .5);
     padding: 0;
     font-family: $headingFF;
     font-weight: 300;
@@ -66,6 +66,8 @@ h4, .h4 {
 }
 h5, .h5 {
     font-size: 1.8rem;
+    font-family: futura-pt-bold, Helvetcia, sans-serif;
+    font-weight: 700;
 }
 h6, .h6 {
     font-size: 1.4rem;
@@ -85,5 +87,19 @@ h6, .h6 {
         height: .4rem;
         background: $accent-2;
         content: "";
+    }
+    
+    .ta-center & {
+        justify-content: center;
+    }
+}
+// HAS ICON
+.has-icon {
+    @include flex(flex-start, center, null, row nowrap);
+    
+    img {
+        @include flexItem(0, 0, auto);
+        width: 4rem;
+        margin: 0 ($gutter * .5) 0 0;
     }
 }

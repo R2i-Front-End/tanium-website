@@ -1,0 +1,18 @@
+/*  --------------------------------------------------------------------------  *\
+
+    CALL TO ACTION > BORDERED
+
+\*  --------------------------------------------------------------------------  */
+&.bordered {
+    border: .1rem solid $tertiary;
+    border-left: .3rem solid $accent-2;
+    padding: ($gutter * .5) $gutter;
+    
+    @media #{$mediaMd} {
+        @include flex(space-between, center, null, row nowrap);
+        
+        > div {
+            width: 58.333%;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+/* CSS Document */
+.list-facts {
+    margin: $gutter ($gutter * -.5);
+    
+    @media #{$mediaMd} {
+        @include flex(space-between, stretch, null, row wrap);
+    }
+    
+    li {
+        padding: 0;
+        
+        &:before {
+            display: none;
+        }
+        
+        @media #{$mediaMd} {
+            @include flexItem(1, 0, auto);
+            width: calc(33.333% - #{$gutter});
+            min-width: calc(25% - #{$gutter});
+            max-width: calc(50% - #{$gutter});
+            margin: 0 ($gutter * .5);
+        
+            + li {
+                margin: 0 ($gutter * .5);
+            }
+        }
+    }
+}

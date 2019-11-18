@@ -9,19 +9,7 @@
 \*  --------------------------------------------------------------------------  */
 .hero {
     @include position(relative, 0);
-    padding: #{$gutterSm} 0;
-    
-    @media #{$mediaMd} {
-        padding: $gutter 0;
-    }
-    
-    @media #{$mediaLg} {
-        padding: ($gutter * 1.8) 0;
-    }
-    
-    @media #{$mediaXl} {
-        padding: ($gutter * 2.6) 0;
-    }
+    padding: $gutterSm 0;
     /*  =---------------------------------------------------------------------  *\
     
       IMPORT STYLES FOR DIFFERENT HERO TYPES

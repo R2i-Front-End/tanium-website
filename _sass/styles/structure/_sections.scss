@@ -4,14 +4,26 @@
 
 \*  --------------------------------------------------------------------------  */
 section {
-    padding: #{$gutter} 0;
+    padding: $gutter 0;
     
-    &.sm {
-        padding: #{$gutterSm} 0;
+    @media #{$mediaMd} {
+        padding: ($gutter * 1.5) 0;
+    }
+    
+    @media #{$mediaLg} {
+        padding: ($gutter * 2) 0;
     }
     
     &.lg {
-        padding: #{$gutterLg} 0;
+        padding: ($gutter * 1.5) 0;
+
+        @media #{$mediaMd} {
+            padding: ($gutter * 3) 0;
+        }
+
+        @media #{$mediaLg} {
+            padding: ($gutter * 4) 0;
+        }
     }
     
     > div {

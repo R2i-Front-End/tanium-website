@@ -1,0 +1,41 @@
+<section class="{{ about.class }}">
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                <div class="row va-bottom">
+                    <div class="col-xs-12 col-md-8 col-lg-6">
+                        <h2>
+                            <small class="eyebrow">{{ about.eyebrow }}</small>
+                            {{ about.title }}
+                        </h2>
+                        <p class="intro">{{ about.text }}</p>
+                    </div>
+                    <div class="col-xs-12 col-md-4 ta-right">
+                        <a href="{{ about.cta.link }}" class="{% if about.cta.class %}{{ about.cta.class }}{% else %}btn-primary{% endif %}">{{ about.cta.copy }}</a>
+                    </div>
+                </div>
+                <ul class="list-hilights">
+                    {% for highlight in about.highlights %}
+                    <li>
+                        <h3 class="h5{% if highlight["icon image"] %} has-icon{% endif %}">
+                            {% if highlight["icon image"] %}
+                            <img src="{{ highlight["icon image"] }}" alt="Icon {{ highlight.title }}" />
+                            {% endif %}
+                            {{ highlight.title }}
+                        </h3>
+                        <p>{{ highlight.text }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% if about.announcement.title %}
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                {% assign announcement = about.announcement %}
+                {% include components/basic/ctas/bordered.html %}
+            </div>
+        </div>
+        {% endif %}
+    </div>
+</section>
