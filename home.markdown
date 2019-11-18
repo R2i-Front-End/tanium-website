@@ -76,26 +76,22 @@ success:
   text: Engage with Tanium’s team and other Tanium users to ask questions, learn about
     best practices, pass on feedback to our product team and more.
   quick links:
-    link 1:
-      icon image: 
-      title: Tanium Discussions
-      copy: 
-      link: "/#"
-    link 2:
-      icon image: 
-      title: Ask the Experts
-      copy: 
-      link: "/#"
-    link 3:
-      icon image: 
-      title: Tanium Blog
-      copy: 
-      link: "/#"
-    link 4:
-      icon image: 
-      title: Best Practices
-      copy: 
-      link: "/#"
+  - icon image: 
+    title: Tanium Discussions
+    copy: 
+    link: "/#"
+  - icon image: 
+    title: Ask the Experts
+    copy: 
+    link: "/#"
+  - icon image: 
+    title: Tanium Blog
+    copy: 
+    link: "/#"
+  - icon image: 
+    title: Best Practices
+    copy: 
+    link: "/#"
   cta:
     link: "/#"
     copy: Explore community
