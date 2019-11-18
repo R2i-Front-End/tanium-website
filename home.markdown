@@ -18,6 +18,7 @@ bottomCTA:
   cta:
     link: "/see-tanium-live"
     copy: See Tanium Live
+  image: "/uploads/cta-bottom-1.png"
 layout: home
 ---
 
