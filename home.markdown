@@ -16,7 +16,8 @@ bottomCTA:
   eyebrow: More About Tanium
   title: Join our weekly webinar.
   cta:
-    link: "/#"
+    link: "/see-tanium-live"
+    copy: See Tanium Live
 layout: home
 ---
 
