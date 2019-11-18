@@ -76,6 +76,8 @@ defaults:
     type: pages
   values:
     layout: products
+    hero:
+      class: 'product bg-primary-lt'
     intro:
       eyebrow: ''
       title: ''
