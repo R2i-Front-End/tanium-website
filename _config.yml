@@ -51,7 +51,7 @@ defaults:
       title: ''
       cta:
         link: ''
-        text: ''
+        copy: ''
       image: ''
       imageLocation: ''
 - scope:
