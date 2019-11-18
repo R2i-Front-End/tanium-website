@@ -42,9 +42,9 @@ defaults:
       icon: ''
       cta:
         link: ''
-        text: ''
-      image_mobile: ''
-      image_desktop: ''
+        copy: ''
+      'mobile image': ''
+      'desktop image': ''
       class: ''
     bottomCTA:
       eyebrow: ''
@@ -64,7 +64,7 @@ defaults:
       title: ''
       copy: ''
       cta:
-        link: ''
+        copy: ''
         text: ''
       list:
         item:
@@ -83,13 +83,13 @@ defaults:
       facts:
         fact:
           figure: ''
-          text: ''
+          copy: ''
     callout:
       title: ''
       copy: ''
       cta:
         link: ''
-        text: ''
+        copy: ''
       image_mobile: ''
       image_desktop: ''
       imageLocation: ''
@@ -98,7 +98,7 @@ defaults:
       title: Challenges We Solve
       cta:
         link: ''
-        text: ''
+        copy: ''
     industries:
       eyebrow: Industries
       title: Explore Taniums Industries
