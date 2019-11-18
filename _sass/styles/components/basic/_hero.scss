@@ -8,49 +8,30 @@
 
 \*  --------------------------------------------------------------------------  */
 .hero {
-    padding: #{$gutter} 0;
+    @include position(relative, 0);
+    padding: #{$gutterSm} 0;
     
     @media #{$mediaMd} {
-        padding: #{$gutter * 1.5} 0;
+        padding: $gutter 0;
     }
     
     @media #{$mediaLg} {
-        padding: #{$gutter} 0;
+        padding: ($gutter * 1.8) 0;
     }
     
-    .cnt {
-        max-width: $siteWMx;
-        margin: 0 auto;
-        padding: 0 #{$gutter / 2};
-        
-        @each $q in $siteWQueryList {
-            $i: index($siteWQueryList, $q);
-                
-            @if $i == 1 {
-                width: nth($siteWList, $i);
-            } @else {
-                @media #{$q} {
-                    width: nth($siteWList, $i);
-                }
-            }
-        }
-        
-        :last-child {
-            margin-bottom: 0;
-        }
+    @media #{$mediaXl} {
+        padding: ($gutter * 2.6) 0;
     }
     /*  =---------------------------------------------------------------------  *\
     
-      IMPORT STYLES FOR SIZE VARIATION
+      IMPORT STYLES FOR DIFFERENT HERO TYPES
     
     \*  ----------------------------------------------------------------------  */
-    @import 'heroes/sizes/_sm';
-    @import 'heroes/sizes/_lg';
-    @import 'heroes/sizes/_fs';
+    @import 'heroes/types/_home';
     /*  =---------------------------------------------------------------------  *\
     
       IMPORT STYLES FOR INCLUDING MEDIA ELEMENTS
     
     \*  ----------------------------------------------------------------------  */
-    @import 'heroes/media';
+    @import 'heroes/_media';
 }

@@ -28,6 +28,11 @@ html {
         overflow-x: hidden;
     }
 }
+main {
+    display: block;
+    width: 100%;
+    overflow: hidden;
+}
 /*  --------------------------------------------------------------------------  *\
 
     REMOVES OUTLINE ON FOCUS

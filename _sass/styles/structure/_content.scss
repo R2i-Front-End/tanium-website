@@ -1,0 +1,30 @@
+/*  --------------------------------------------------------------------------  *\
+
+    CONTENT
+
+\*  --------------------------------------------------------------------------  */
+.cnt {
+    max-width: $siteWMx;
+    margin: 0 auto;
+    padding: 0 ($gutterSm * .5);
+
+    @each $q in $siteWQueryList {
+        $i: index($siteWQueryList, $q);
+
+        @if $i == 1 {
+            width: nth($siteWList, $i);
+        } @else {
+            @media #{$q} {
+                width: nth($siteWList, $i);
+            }
+        }
+    }
+    
+    @media #{$mediaMd} {
+        padding: 0 ($gutter * .5);
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}

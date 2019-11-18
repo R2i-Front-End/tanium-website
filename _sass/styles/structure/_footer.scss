@@ -10,17 +10,8 @@ body>footer {
     font-size: 1.2rem;
     
     > div {
-        margin: 0 auto;
-        padding: 0 ($gutterSm * .5);
-        max-width: $siteWMx;
-        @include setW();
-        
         @media #{$mediaMd} {
             @include clearfix;
-        }
-        
-        @media #{$mediaLg} {
-            padding: 0 #{$gutter * .5};
         }
     }
     

@@ -1,0 +1,16 @@
+<header class="hero {{ page.hero.class }}">
+    <div class="cnt">
+        <div>
+            <h1>{{ page.hero.title }}</h1>
+            <p class="intro">{{ page.hero.copy }}</p>
+        </div>
+        <picture>
+            <source media="(max-width: 600px)" srcset="{{ page.hero['mobile image'] }}">
+            <source media="(min-width: 601px)" srcset="{{ page.hero['desktop image'] }}">
+            <img src="{{ page.hero['desktop image'] }}" alt="Alt text here" />
+        </picture>
+        {% if page.hero.cta.link %}
+        <a href="{{ page.hero.cta.link }}" class="{% if page.hero.cta.class %}{{ cta[class] }}{% else %}btn-primary{% endif %}">{{ page.hero.cta.copy }}</a>
+        {% endif %}
+    </div>
+</header>
