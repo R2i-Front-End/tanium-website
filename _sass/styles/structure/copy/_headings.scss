@@ -70,3 +70,20 @@ h5, .h5 {
 h6, .h6 {
     font-size: 1.4rem;
 }
+// EYEBROW STYLING
+.eyebrow {
+    @include flex(flex-start, center, null, row nowrap);
+    margin: 0 0 ($gutter * .5);
+    font-weight: 500;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    
+    &:after {
+        display: block;
+        margin: 0 0 0 ($gutter * .5);
+        width: 10rem;
+        height: .4rem;
+        background: $accent-2;
+        content: "";
+    }
+}

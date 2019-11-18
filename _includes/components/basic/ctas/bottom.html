@@ -1,14 +1,14 @@
-<section class="cta {{ page.bottomCta.class }}">
+<section class="cta bottom {{ page.bottomCTA.class }}">
     <div class="cnt">
         <div>
             <h2>
-                <small>{{ page.bottomCta.eyebrow }}</small>
-                {{ page.bottomCta.title }}
+                <small class="eyebrow">{{ page.bottomCTA.eyebrow }}</small>
+                {{ page.bottomCTA.title }}
             </h2>
-            {% if page.bottomCta.cta.link %}
-            <a href="{{ page.bottomCta.cta.link }}" class="{% if page.bottomCta.cta.class %}{{ cta[class] }}{% else %}btn-primary{% endif %}">{{ page.bottomCta.cta.copy }}</a>
+            {% if page.bottomCTA.cta.link %}
+            <a href="{{ page.bottomCTA.cta.link }}" class="{% if page.bottomCTA.cta.class %}{{ cta[class] }}{% else %}btn-primary{% endif %}">{{ page.bottomCTA.cta.copy }}</a>
             {% endif %}
         </div>
-        <img src="{{ page.bottomCta.image }}" alt="Alt text here" />
+        <img src="{{ page.bottomCTA.image }}" alt="Alt text here" />
     </div>
 </section>
