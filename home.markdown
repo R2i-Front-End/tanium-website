@@ -38,7 +38,7 @@ about:
     text: Tanium partners with every customer through dedicated, personalized service
       and an unstoppable culture focused on driving outcomes for every client.
   - icon image: 
-    title: "Flexible platform and expanding portfolio of \x03advanced solutions"
+    title: Flexible platform and expanding portfolio of advanced solutions
     text: Designed to provide strategic value, Tanium’s approach enables product solutions
       that are powerful and can evolve with the growth of your business.
   - icon image: 
