@@ -29,19 +29,19 @@ about:
     copy: Watch video
     class: btn-secondary
   highlights:
-  - icon image: 
+  - icon image: "/uploads/icon-completeness.png"
     title: Unparalleled speed, visibility and control at scale
     text: Tanium enables IT to address the complexity of large, distributed networks
       through current and complete endpoint visibility and control, at scale.
-  - icon image: 
+  - icon image: "/uploads/icon-careers.png"
     title: Exceptional focus on customer success
     text: Tanium partners with every customer through dedicated, personalized service
       and an unstoppable culture focused on driving outcomes for every client.
-  - icon image: 
+  - icon image: "/uploads/icon-architecture.png"
     title: Flexible platform and expanding portfolio of advanced solutions
     text: Designed to provide strategic value, Tanium’s approach enables product solutions
       that are powerful and can evolve with the growth of your business.
-  - icon image: 
+  - icon image: "/uploads/icon-messaging.png"
     title: Proven in top enterprises and organizations
     text: Tanium provides manageability and security to the world’s most technically
       demanding enterprises and organizations, including half of the Fortune 100 and
@@ -76,19 +76,19 @@ success:
   text: Engage with Tanium’s team and other Tanium users to ask questions, learn about
     best practices, pass on feedback to our product team and more.
   quick links:
-  - icon image: 
+  - icon image: "/uploads/icon-bubbles.png"
     title: Tanium Discussions
     copy: 
     link: "/#"
-  - icon image: 
+  - icon image: "/uploads/icon-headset.png"
     title: Ask the Experts
     copy: 
     link: "/#"
-  - icon image: 
+  - icon image: "/uploads/icon-alert.png"
     title: Tanium Blog
     copy: 
     link: "/#"
-  - icon image: 
+  - icon image: "/uploads/icon-news.png"
     title: Best Practices
     copy: 
     link: "/#"
