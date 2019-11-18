@@ -43,8 +43,8 @@ defaults:
       cta:
         link: ''
         copy: ''
-      'mobile image': ''
-      'desktop image': ''
+      mobile image: ''
+      desktop image: ''
       class: ''
     bottomCTA:
       eyebrow: ''
