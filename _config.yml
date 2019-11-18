@@ -77,7 +77,7 @@ defaults:
   values:
     layout: products
     hero:
-      class: 'product bg-primary-lt'
+      class: product bg-primary-lt
     intro:
       eyebrow: ''
       title: ''
