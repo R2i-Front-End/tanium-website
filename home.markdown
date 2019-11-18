@@ -72,7 +72,7 @@ customers:
     link: "/#"
     copy: View Customer Success
     class: 
-  class: bg-secondary-lt ta-center
+  class: bg-tertiary-lt ta-center
 resources:
   eyebrow: Resources
   title: Latest Thinking
