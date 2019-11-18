@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-
+{% if page.hero.title %}
 {% include components/basic/hero.html %}
+{% endif %}
 {{ content }}
+{% if page.bottomCTA.title %}
 {% include components/basic/ctas/bottom.html %}
+{% endif %}

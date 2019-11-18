@@ -1,0 +1,25 @@
+/*  --------------------------------------------------------------------------  *\
+
+    HEROES > TYPE > PRODUCT
+
+\*  --------------------------------------------------------------------------  */
+&.product {
+    padding: 0;
+    
+    .cnt {
+        @include position(relative, null);
+        
+        picture {
+            width: calc(100% + #{$gutter});
+            margin: 0 ($gutter * -1) 0 0;
+        }
+    }
+    
+    @media #{$mediaLg} {
+        .row {
+            > :first-child {
+                margin-right: -8.333%;
+            }
+        }
+    }
+}
