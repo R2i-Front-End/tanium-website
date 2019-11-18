@@ -46,6 +46,15 @@ about:
     text: Tanium provides manageability and security to the world’s most technically
       demanding enterprises and organizations, including half of the Fortune 100 and
       four out of five US military branches.
+  announcement:
+    icon image: "/uploads/product-performance.png"
+    title: Announcing Tanium Performance
+    text: Monitor, investigate and remediate endpoint performance issues, quickly
+      and at scale.
+    cta:
+      link: "/#"
+      copy: Explore Now
+      class: 
 customers:
   eyebrow: Customers
   title: Proven in Top Industries and Organizations
