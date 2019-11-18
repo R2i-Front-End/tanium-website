@@ -11,5 +11,6 @@ hero:
     link: "/about/contact-us"
     copy: Schedule a demo
   desktop image: "/uploads/hero-performance.png"
+  class: product bg-primary-lt
 ---
 
