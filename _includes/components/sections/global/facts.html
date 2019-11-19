@@ -21,7 +21,9 @@
                     </li>
                     {% endfor %}
                 </ul>
-                <a href="{{ facts.cta.link }}" class="{% if facts.cta.class %}{{ facts.cta.class }}{% else %}btn-primary{% endif %}">{{ facts.cta.copy }}</a>
+                {% for cta in facts.cta %}
+                <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                {% endfor %}
             </div>
         </div>
     </div>

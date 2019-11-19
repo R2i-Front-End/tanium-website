@@ -11,7 +11,9 @@
                         <p class="intro">{{ about.text }}</p>
                     </div>
                     <div class="col-xs-12 col-md-4 ta-right">
-                        <a href="{{ about.cta.link }}" class="{% if about.cta.class %}{{ about.cta.class }}{% else %}btn-primary{% endif %}">{{ about.cta.copy }}</a>
+                        {% for cta in about.cta %}
+                        <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                        {% endfor %}
                     </div>
                 </div>
                 <ul class="list-hilights">

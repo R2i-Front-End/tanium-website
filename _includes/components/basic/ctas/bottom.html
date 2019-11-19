@@ -5,9 +5,9 @@
                 <small class="eyebrow">{{ page.bottomCTA.eyebrow }}</small>
                 {{ page.bottomCTA.title }}
             </h2>
-            {% if page.bottomCTA.cta.link %}
-            <a href="{{ page.bottomCTA.cta.link }}" class="{% if page.bottomCTA.cta.class %}{{ cta[class] }}{% else %}btn-primary{% endif %}">{{ page.bottomCTA.cta.copy }}</a>
-            {% endif %}
+            {% for cta in page.bottomCTA.cta %}
+            <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+            {% endfor %}
         </div>
         <img src="{{ page.bottomCTA.image }}" alt="Alt text here" />
     </div>
