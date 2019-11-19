@@ -41,8 +41,9 @@ defaults:
       copy: ''
       icon image: ''
       cta:
-        link: ''
+      - link: ''
         copy: ''
+        class: ''
       mobile image: ''
       desktop image: ''
       class: ''
@@ -50,7 +51,7 @@ defaults:
       eyebrow: ''
       title: ''
       cta:
-        link: ''
+      - link: ''
         copy: ''
         class: ''
       image: ''
@@ -65,8 +66,9 @@ defaults:
       title: ''
       copy: ''
       cta:
+      - link: ''
         copy: ''
-        text: ''
+        class: ''
       list:
         item:
           title: ''
@@ -100,7 +102,7 @@ defaults:
         title: ''
         text: ''
       cta:
-        link: ''
+      - link: ''
         copy: ''
         class: ''
       class: ''
@@ -114,12 +116,8 @@ defaults:
         text: ''
       - title: ''
         text: ''
-      cta1:
-        link: ''
-        copy: ''
-        class: ''
-      cta2:
-        link: ''
+      cta:
+      - link: ''
         copy: ''
         class: ''
     products:
@@ -135,7 +133,7 @@ defaults:
       - title: ''
         icon image: ''
       cta:
-        link: ''
+      - link: ''
         copy: ''
         class: ''
     resources:
@@ -143,15 +141,16 @@ defaults:
       title: Related Content
       count: '3'
       cta:
-        link: ''
+      - link: ''
         copy: View all content
         class: btn-primary
     bottomCTA:
       eyebrow: Next step
       title: Ready to get started?
       cta:
-        link: ''
+      - link: ''
         copy: Schedule a demo
+        class: ''
       image: ''
       imageLocation: ''
 permalink: pretty
