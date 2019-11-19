@@ -9,6 +9,11 @@ hero:
   icon image: "/uploads/product-performance-f12d24.png"
   desktop image: "/uploads/hero-performance.png"
   class: product bg-primary-lt
+bottomCTA:
+  cta:
+  - link: "/#"
+    copy: Schedule a demo
+    class: btn-primary
 intro:
   eyebrow: Section Tag
   text: Product intro lorem ipsum dolor sit amet, consectetur adipisicng elit. Libero
