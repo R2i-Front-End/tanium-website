@@ -25,6 +25,9 @@ intro:
     atque et hic fugiat error.
   video:
     title: Video Header Lorem Ipsum Dolor Sit Amet
+    video: 280584796
+    caption: Caption Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodi,
+      libero cumque sunt dolor, eos beatae.
 benefits:
   eyebrow: Benefits
   title: Explore Performance Benefits
