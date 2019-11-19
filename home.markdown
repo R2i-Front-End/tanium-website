@@ -7,8 +7,9 @@ hero:
   title: Unify management and security of endpoints, everywhere. Instantly.
   copy: Drive efficiency and take control like never before.
   cta:
-    link: "/#"
+  - link: "/#"
     copy: See Tanium in Action
+    class: btn-primary
   mobile image: "/uploads/home-mobile.png"
   desktop image: "/uploads/home-desktop.png"
   class: home
@@ -16,8 +17,9 @@ bottomCTA:
   eyebrow: More About Tanium
   title: Join our weekly webinar.
   cta:
-    link: "/see-tanium-live"
+  - link: "/see-tanium-live"
     copy: See Tanium Live
+    class: btn-primary
   image: "/uploads/cta-bottom-1.png"
 about:
   eyebrow: About
@@ -25,7 +27,7 @@ about:
   text: Tanium is a unified endpoint management and security platform built for the
     world’s most demanding IT environments.
   cta:
-    link: "/#"
+  = link: "/#"
     copy: Watch video
     class: btn-secondary
   highlights:
@@ -52,7 +54,7 @@ about:
     text: Monitor, investigate and remediate endpoint performance issues, quickly
       and at scale.
     cta:
-      link: "/#"
+    - link: "/#"
       copy: Explore now
       class: 
   class: 
@@ -69,7 +71,7 @@ customers:
   - figure: 4
     copy: of the 5 US Armed Forces
   cta:
-    link: "/#"
+  - link: "/#"
     copy: View Customer Success
     class: 
   class: bg-tertiary-lt ta-center
@@ -78,7 +80,7 @@ resources:
   title: Latest Thinking
   amount: 3
   cta:
-    link: "/#"
+  - link: "/#"
     copy: View all articles
     class: 
   class: 
@@ -105,7 +107,7 @@ success:
     copy: 
     link: "/#"
   cta:
-    link: "/#"
+  - link: "/#"
     copy: Explore community
     class: 
   class: bg-secondary
