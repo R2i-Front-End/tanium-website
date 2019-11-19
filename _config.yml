@@ -120,6 +120,7 @@ defaults:
       - link: ''
         copy: ''
         class: ''
+      class: ''
     products:
       eyebrow: Products
       title: Explore Related Products Lorem Ipsum Dolor Sit
@@ -136,6 +137,7 @@ defaults:
       - link: ''
         copy: ''
         class: ''
+      class: ''
     resources:
       eyebrow: Resources
       title: Related Content
@@ -144,6 +146,7 @@ defaults:
       - link: ''
         copy: View all content
         class: btn-primary
+      class: ''
     bottomCTA:
       eyebrow: Next step
       title: Ready to get started?
