@@ -7,8 +7,9 @@ hero:
   title: Unify management and security of endpoints, everywhere. Instantly.
   copy: Drive efficiency and take control like never before.
   cta:
-    link: "/#"
-    copy: See Tanium in Action
+  - link: "/#"
+    copy: See Tanium in action
+    class: btn-primary
   mobile image: "/uploads/home-mobile.png"
   desktop image: "/uploads/home-desktop.png"
   class: home
@@ -16,8 +17,9 @@ bottomCTA:
   eyebrow: More About Tanium
   title: Join our weekly webinar.
   cta:
-    link: "/see-tanium-live"
+  - link: "/#"
     copy: See Tanium Live
+    class: btn-primary
   image: "/uploads/cta-bottom-1.png"
 about:
   eyebrow: About
