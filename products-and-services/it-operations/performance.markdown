@@ -82,5 +82,6 @@ products:
   - link: "/products-and-services"
     copy: Explore all products
     class: btn-primary
+  class: bg-secondary
 ---
 
