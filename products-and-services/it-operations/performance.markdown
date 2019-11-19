@@ -7,9 +7,6 @@ hero:
   copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque itaque, molestiae
     fuga officiis dolorum natus.
   icon image: "/uploads/product-performance-f12d24.png"
-  cta:
-    link: "/about/contact-us"
-    copy: Schedule a demo
   desktop image: "/uploads/hero-performance.png"
   class: product bg-primary-lt
 intro:
@@ -38,8 +35,8 @@ benefits:
     text: Benefit copy voluptatem eveniet dolor mollitia, harum quam illum explicabo
       velit sunt, odio.
   cta:
-    link: "/#"
-    copy: Schedule a Demo
+  - link: "/#"
+    copy: Schedule a demo
     class: btn-primary
   class: bg-primary-lt
 features:
@@ -55,15 +52,16 @@ features:
   - title: Feature 3 illo, fuga, architecto
     text: Feature copy placeat tempora fuga vero modi tem pore nesciunt moles tias
       consectetur perferendis natus explicabo, iusto, qui amet.
-  cta1:
-    link: "/#"
+  cta:
+  - link: "/#"
     copy: View user guide
     class: btn-primary
-  cta2:
-    link: "/#"
+  - link: "/#"
     copy: Download data sheet
     class: btn-primary
 products:
+  eyebrow: Products
+  title: Explore Related Products Lorem Ipsum Dolor Sit
   products:
   - title: Tanium Asset
     icon image: "/uploads/product-performance-f12d24.png"
@@ -74,11 +72,8 @@ products:
   - title: Tanium Patch
     icon image: "/uploads/product-performance-f12d24.png"
   cta:
-    link: "/#"
+  - link: "/products-and-services"
     copy: Explore all products
     class: btn-primary
-resources:
-  cta:
-    link: "/#"
 ---
 
