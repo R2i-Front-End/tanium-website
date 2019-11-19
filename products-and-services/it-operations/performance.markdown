@@ -7,9 +7,15 @@ hero:
   copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque itaque, molestiae
     fuga officiis dolorum natus.
   icon image: "/uploads/product-performance-f12d24.png"
+  cta:
+  - link: "/#"
+    copy: Test
+    class: btn-primary
   desktop image: "/uploads/hero-performance.png"
   class: product bg-primary-lt
 bottomCTA:
+  eyebrow: Next step
+  title: Ready to get started?
   cta:
   - link: "/#"
     copy: Schedule a demo
