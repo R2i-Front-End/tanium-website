@@ -1,0 +1,25 @@
+<section{% if features.class %} class="{{ features.class}}"{% endif %}>
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                <h2>
+                    <small class="eyebrow">{{ features.eyebrow }}</small>
+                    {{ features.title }}
+                </h2>
+                <ul class="list-features">
+                    {% for feature in features.features %}
+                    <li>
+                        <h3 class="h5">{{ feature.title }}</h3>
+                        <p>{{ feature.text }}</p>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p class="ta-center">
+                    {% for cta in features.cta %}
+                    <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

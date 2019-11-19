@@ -1,0 +1,30 @@
+<section{% if benefits.class %} class="{{ benefits.class }}"{% endif %}>
+    <div class="cnt">
+        <div class="row ha-center ta-center">
+            <div class="col-xs-12 col-lg-10">
+                <div class="row ha-left">
+                    <div class="col-xs-12 col-md-8">
+                        <h2>
+                            <small class="eyebrow">{{ benefits.eyebrow }}</small>
+                            {{ benefits.title }}
+                        </h2>
+                        <ul class="list-benefits">
+                            {% for benefit in benefits.benefits %}
+                            <li>
+                                <img src="{{ benefit["icon image"] }}" alt="Icon {{ benefit.title }}" />
+                                <div>
+                                    <h3 class="h4">{{ benefit.title }}</h3>
+                                    <p>{{ benefit.text }}</p>
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                        {% for cta in benefits.cta %}
+                        <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

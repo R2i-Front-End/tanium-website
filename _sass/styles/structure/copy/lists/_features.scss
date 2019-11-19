@@ -1,0 +1,37 @@
+/* CSS Document */
+.list-features {
+    border-left: .1rem solid $secondary-light;
+    margin: ($gutterSm) 0;
+    padding: 0 0 0 ($gutterSm * .5);
+    
+    @media #{$mediaMd} {
+        margin: ($gutterSm * 1.5) 0;
+        @include flex(flex-start, flex-start, null, row wrap);
+    }
+    
+    @media #{$mediaLg} {
+        padding: 0 0 0 $gutterSm;
+    }
+    
+    li {
+        padding: 0;
+        
+        &:before {
+            display: none;
+        }
+        
+        + li {
+            margin: 0;
+        }
+        
+        @media #{$mediaMd} {
+            width: 33.333%;
+            max-width: 50%;
+            padding: $gutterSm;
+        }
+        
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+}

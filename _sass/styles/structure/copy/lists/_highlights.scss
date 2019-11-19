@@ -1,5 +1,5 @@
 /* CSS Document */
-.list-hilights {
+.list-highlights {
     @media #{$mediaMd} {
         @include flex(space-between, flex-start, flex-start, row wrap);
         margin: $gutter ($gutter * .5) 0;

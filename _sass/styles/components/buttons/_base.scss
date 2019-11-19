@@ -31,10 +31,18 @@
         color: $accent-1;
     }
     
+    + [class*="btn-"] {
+        margin: ($gutterSm * .5) 0 0;
+    }
+    
     @media #{$mediaMd} {
         display: inline-block;
         width: auto;
         padding: 1.5rem 4.75rem;
+    
+        + [class*="btn-"] {
+            margin: 0 0 0 $gutterSm;
+        }
     }
     
     @media #{$mediaLg} {

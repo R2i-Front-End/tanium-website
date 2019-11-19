@@ -1,0 +1,34 @@
+<section{% if related.class %} class="{{ related.class}}"{% endif %}>
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                <div class="row va-center">
+                    <div class="col-xs-12 col-md-6">
+                        <h2>
+                            <small class="eyebrow">{{ related.eyebrow }}</small>
+                            {{ related.title }}
+                        </h2>
+                        {% for cta in related.cta %}
+                        <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                        {% endfor %}
+                    </div>
+                    <div class="col-xs-12 col-md-6">
+                        <nav class="products">
+                            <ul>
+                                {% for product in related.products %}
+                                <li>
+                                    <a href="{{ product.link }}">
+                                        <img src="{{ product['icon image'] }}" alt="Icon {{ product.title }}" />
+                                        <h3 class="h4">{{ product.title }}</h3>
+                                        <span class="fas fa-arrow-right"></span>
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

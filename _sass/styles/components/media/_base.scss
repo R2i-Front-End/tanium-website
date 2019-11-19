@@ -20,14 +20,21 @@ figure {
         margin: 0 0 #{$gutter};
     }
     
-    > figcaption {
-        // Set the base styles for majority figcaption tags here
-        padding: #{$gutterSm};
-        background: $tertiary-light;
+    .has-video {
+        @include position(relative, null);
+        padding-top: 56.25%;
         
-        @media #{$mediaMd} {
-            padding: #{$gutter};
+        iframe, video {
+            @include position(absolute, null, (left, top), (0, 0));
+            width: 100%;
+            height: 100%;
+            border: none;
         }
+    }
+    
+    > figcaption {
+        padding: ($gutterSm * .5) 0;
+        font-size: 1.4rem;
         
         :last-child {
             // Set the last child to have a margin bottom of 0 to follow the 
@@ -35,28 +42,10 @@ figure {
             margin-bottom: 0;
         }
     }
-    /*  ----------------------------------------------------------------------  *\
-
-        LAYOUT OPTIONS
     
-        Comment or remove when the following layouts are not necessary
-
-    \*  ----------------------------------------------------------------------  */    
-    @import 'layouts/_cap-side';
-    @import 'layouts/_cap-overlap';
-    @import 'layouts/_cap-over';
-    /*  ----------------------------------------------------------------------  *\
-
-        HOVER EFFECTS
-    
-        Comment or remove when the following effects are not necessary
-
-    \*  ----------------------------------------------------------------------  */    
-    @import 'effects/_hover-effects';
-    @import 'effects/_draw-border';
-    @import 'effects/_fade-in';
-    @import 'effects/_slide-up';
-    @import 'effects/_zoom';
+    &:last-child {
+        margin-bottom: 0;
+    }
 }
 /*  ----------------------------------------------------------------------  *\
 
@@ -64,15 +53,3 @@ figure {
 
 \*  ----------------------------------------------------------------------  */    
 @import 'sizing/_columns';
-/*  --------------------------------------------------------------------------  *\
-
-    MEDIA GALLERY
-
-\*  --------------------------------------------------------------------------  */
-@import '_gallery';
-/*  --------------------------------------------------------------------------  *\
-
-    HOT SPOTS
-
-\*  --------------------------------------------------------------------------  */
-@import '_hot-spots';

@@ -1,0 +1,30 @@
+/* CSS Document */
+.list-benefits {
+    text-align: left;
+    margin: ($gutterSm * 1.5) 0;
+    
+    li {
+        @include flex(space-between, center, null, row nowrap);
+        padding: 0;
+        
+        &:before {
+            display: none;
+        }
+        
+        + li {
+            margin: 4rem 0 0;
+            padding: 4rem 0 0;
+            border-top: .1rem solid $secondary;
+        }
+        
+        :last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    img {
+        @include flexItem(0, 0, auto);
+        width: 4rem;
+        margin: 0 2.5rem 0 0;
+    }
+}

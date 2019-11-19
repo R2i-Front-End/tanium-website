@@ -1,0 +1,19 @@
+<section{% if intro.class %} class="{{ intro.class}}"{% endif %}>
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-md-10 col-lg-8">
+                <p class="eyebrow">{{ intro.eyebrow }}</p>
+                <p class="intro">{{ intro.text }}</p>
+                {% if intro.video %}
+                <h2 class="ta-center">{{ intro.video.title }}</h2>
+                <figure>
+                    <div class="has-video">
+                        <iframe src="https://player.vimeo.com/video/{{ intro.video.video }}"></iframe>
+                    </div>
+                    <figcaption>{{ intro.video.caption }}</figcaption>
+                </figure>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</section>
