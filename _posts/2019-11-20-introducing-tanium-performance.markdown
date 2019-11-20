@@ -1,6 +1,8 @@
 ---
 title: Introducing Tanium Performance
 date: 2019-11-20 18:56:00 Z
+categories:
+- Solution Briefs
 ---
 
 Introducing Tanium Performance: Improved End User Experience on Endpoints! 
