@@ -2,10 +2,6 @@
 title: Tanium
 timezone: UTC
 collections:
-  blog:
-    title: Blog
-    output: true
-    permalink: "/about/blog/"
   case-studies:
     title: Case Studies
     output: true
