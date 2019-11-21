@@ -28,9 +28,10 @@ defaults:
     layout: resource
     permalink: "/resources/:title/"
     author:
+      about headline: 
       name: ''
       image: ''
-      bio: ''
+      bio text: ''
     form:
       id: ''
 - scope:
