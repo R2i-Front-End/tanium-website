@@ -1,0 +1,20 @@
+/*  --------------------------------------------------------------------------  *\
+
+    DETAILS > RESOURCE > INFO
+
+\*  --------------------------------------------------------------------------  */
+.res-info {
+    @include flex(flex-start, center, null, row nowrap);
+    margin: 0 0 $gutterSm;
+    
+    .share {
+        padding: 1.5rem $gutterSm;
+        margin: 0 0 0 $gutterSm;
+        border-left: .1rem solid $tertiary-light;
+    }
+    
+    .by {
+        margin: 0;
+        color: $secondary;
+    }
+}

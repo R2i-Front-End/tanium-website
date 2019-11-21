@@ -3,35 +3,34 @@
     BREADCRUMB
 
 \*  --------------------------------------------------------------------------  */
-&.bc {
-    margin: 0 0 #{$gutterSm};
+&.breadcrumb {
+    padding: ($gutterSm * .5) 0;
+    border-bottom: .1rem solid $tertiary-light;
     color: $accent-3;
+    margin: 0 auto;
+    max-width: $siteWMx;
+
+    @include setW();
     
     ol {
-        @include flex(center, center, center);
-    }
-    
-    li {
-    
-        + li {
-            @include position(relative, null);
-            padding: 0 0 0 $gutter;
-            
-            &:before {
-                display: block;
-                left: #{$gutter * .5};
-                top: 50%;
-                @include transform(translate(-50%, -50%));
-                content: "\00bb";
-            }
+        @include flex(flex-start, center, null);
+        
+        @media #{$mediaLg} {
+            padding: 0 0 0 calc(8.333% + #{$gutterSm * .5});
         }
     }
     
     a {
-        color: $accent-1;
+        color: $secondary;
         
         @include hover {
-            color: $accent-3;
+            color: $accent-1;
+            text-decoration: underline;
         }
+    }
+    
+    .fas {
+        margin: 0 .5rem 0 0;
+        color: $accent-1;
     }
 }

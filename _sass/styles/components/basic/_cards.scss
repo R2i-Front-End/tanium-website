@@ -9,58 +9,26 @@
 
 \*  --------------------------------------------------------------------------  */
 .card {
-    // POSITIONING (DISPLAY, FLEX, FLEX ITEM, POSITION, LEFT, TOP, TRANSFORM)
-    // BOX SIZING (WIDTH, HEIGHT, MARGIN, PADDING)
-    // BOX STYLING (OPACITY, BACKGROUND, BOX SHADOW, BORDER, BORDER RADIUS, OVERFLOW)
-    border: .2rem solid $tertiary;
+    @include flex(space-between, flex-start, null, column nowrap);
+    border: .1rem solid $tertiary-light;
     background: $white;
-    // FONT STYLING (FONT, FONT-FAMILY, FONT-STYLE, FONT-SIZE, LINE-HEIGHT, FONT-WEIGHT)
-    // TEXT STYLING (TEXT-DECORATION, TEXT-TRANSFORM, TEXT-ALIGN, TEXT-SHADOW)
-    // OTHER (TRANSITONS, ANIMATIONS, CURSOR)
+    padding: #{$gutterSm};
+    text-decoration: none;
+    @include boxShadow((0 0 0 rgba($primary, .25)));
     
-    > div {
-        // POSITIONING (DISPLAY, FLEX, FLEX ITEM, POSITION, LEFT, TOP, TRANSFORM)
-        // BOX SIZING (WIDTH, HEIGHT, MARGIN, PADDING)
-        padding: #{$gutterSm};
-        // BOX STYLING (OPACITY, BACKGROUND, BOX SHADOW, BORDER, BORDER RADIUS, OVERFLOW)
-        // FONT STYLING (FONT, FONT-FAMILY, FONT-STYLE, FONT-SIZE, LINE-HEIGHT, FONT-WEIGHT)
-        // TEXT STYLING (TEXT-DECORATION, TEXT-TRANSFORM, TEXT-ALIGN, TEXT-SHADOW)
-        // OTHER (TRANSITONS, ANIMATIONS, CURSOR)
-        
-        @media #{$mediaMd} {
-            padding: #{$gutter};
-        }
+    @include hover {
+        border-color: $white;
+        @include boxShadow((0 0 ($gutterSm * .5) rgba($primary, .25)));
     }
-    
     
     /*---------------------*\
       IMPORT STYLES FOR CARD CONTENT STYLING
     
       Comment out any alterations that will not be used on your site.
       This will reduce the file size by removing unused definitions.
+    @import 'cards/size/_lg';
     \*---------------------*/
     @import 'cards/size/_sm';
-    @import 'cards/size/_lg';
-    /*---------------------*\
-      IMPORT STYLES FOR CARD LAYOUT OPTIONS
-    
-      Comment out any options that will not be used on your site.
-      This will reduce the file size by removing unused definitions.
-    \*---------------------*/
-    @import 'cards/layouts/_img-above';
-    @import 'cards/layouts/_img-behind';
-    @import 'cards/layouts/_img-side';
-    @import 'cards/layouts/_img-overlap';
-    @import 'cards/layouts/_swatch';
-    @import 'cards/layouts/_carousel';
-    /*---------------------*\
-      IMPORT STYLES FOR CARD ICON OPTIONS
-    
-      Comment out any alterations that will not be used on your site.
-      This will reduce the file size by removing unused definitions.
-    \*---------------------*/
-    @import 'cards/icons/_top';
-    @import 'cards/icons/_left';
     /*---------------------*\
       IMPORT STYLES FOR CARD CONTENT STYLING
     

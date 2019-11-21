@@ -1,19 +1,12 @@
 /*  --------------------------------------------------------------------------  *\
 
-    CASE STUDY - GALLERY
+    FEEDS > LAYOUTS > RELATED
 
 \*  --------------------------------------------------------------------------  */
-.cs-gallery {
-    
+.related {
     .card {
-        > div {
-            padding: 0;
+        + .card {
+            margin: ($gutterSm * .5) 0 0;
         }
-    }
-    
-    img {
-        display: block;
-        width: 100%;
-        height: auto;
     }
 }

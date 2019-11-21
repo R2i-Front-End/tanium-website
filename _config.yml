@@ -25,8 +25,14 @@ defaults:
     path: ''
     type: posts
   values:
-    layout: post
-    permalink: "/posts/:title/"
+    layout: resource
+    permalink: "/resources/:title/"
+    author:
+      name: ''
+      image: ''
+      bio: ''
+    form:
+      id: ''
 - scope:
     path: ''
     type: pages

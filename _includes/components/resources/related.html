@@ -1,0 +1,10 @@
+<h2 class="eyebrow flex-center">Related Content</h2>
+<div role="feed" class="related">
+    {% for post in site.posts limit:3 %}
+    <a href="#" class="card sm">
+        <p class="type">{{ post.categories[0] }}</p>
+        <h3 class="h5">{{ post.title }}</h3>
+        <span class="fas fa-arrow-right"></span>
+    </a>
+    {% endfor %}
+</div>

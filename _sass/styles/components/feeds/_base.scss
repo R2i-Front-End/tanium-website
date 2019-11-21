@@ -6,17 +6,4 @@
     for each interactive component, we should have alteration files for each version.
 
 \*  --------------------------------------------------------------------------  */
-// FULL FEED LISTS
-@import 'feeds/_basic';
-@import 'feeds/_profile';
-@import 'feeds/_tile';
-// LATEST FEED
-@import '_latest';
-// FEATURED FEED
-@import 'featured/_flex';
-@import 'featured/_grid';
-@import 'featured/_grid-offset';
-// FEED FACETS AND ARCHIVES
-@import '_filters-archive';
-// FEATURED ITEM
-
+@import 'layouts/related';

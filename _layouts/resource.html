@@ -1,0 +1,74 @@
+---
+layout: page
+---
+<header class="hero resource bg-primary-lt">
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-md-8">
+                <p>{% for cat in page.categories %}{{ cat }}{% endfor %}{% if page.tags %} &mdash; {% for tag in page.tags %}{{ tag }}{% endfor %}{% endif %}</p>
+                <h1>{{ page.title }}</h1>
+            </div>
+            <div class="col-xs-12 col-md-2">
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="breadcrumb">
+    <ol>
+        <li><a href="#"><span class="fas fa-chevron-left"></span> Back to [Previous Page]</a></li>
+    </ol>
+</nav>
+<section class="sm">
+    <div class="cnt">
+        <div class="row ha-right">
+            <div class="col-xs-12 col-lg-11">
+                <div class="res-info">
+                    <p class="by">By: John Doe - January 24, 2019</p>
+                    <nav class="share">
+                        <h2 class="h6">Share</h2>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-facebook-f"></span>
+                                    <span class="sr-only">Share on Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-twitter"></span>
+                                    <span class="sr-only">Share on Twitter</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fab fa-linkedin-in"></span>
+                                    <span class="sr-only">Share on LinkedIn</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fas fa-envelope-open"></span>
+                                    <span class="sr-only">Email this Resource</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <span class="fas fa-print"></span>
+                                    <span class="sr-only">Print this Resource</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-md-8">
+                        {{ content }}
+                    </div>
+                    <div class="col-xs-12 col-md-4">
+                        {% include components/resources/related.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
