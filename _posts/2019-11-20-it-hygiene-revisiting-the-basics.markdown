@@ -4,9 +4,10 @@ date: 2019-11-20 18:59:00 Z
 categories:
 - Webinar On-demand
 author:
-  about headline: 'About the speaker: Chris Hallenbeck, CISO, Americas'
+  about headline: About the speaker
   authors:
   - name: Chris Hallenbeck
+    title: CISO, Americas
     image: "/uploads/chris_hallenbeck.png"
     bio text: 'Chris Hallenbeck is CISO for the Americas at Tanium. Chris provides
       security leadership and operational insight gained from over 20 years in both
