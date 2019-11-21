@@ -6,6 +6,6 @@ hero:
   title: Resources
   copy: Lorem ipsum dolor sit amet, consectatur adipiscing alit. Voluptas assumenda
     corporis, dignissimos, consectetur at harum.
-  class: ta-center
+  class: bg-primary-lt ta-center
 ---
 
