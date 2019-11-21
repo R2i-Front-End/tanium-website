@@ -1,6 +1,11 @@
 ---
 title: Stay Ahead of GDPR and CCPA — Spend Wisely on IT Compliance
 date: 2019-11-21 20:34:00 Z
+categories:
+- Webinar On-demand
+tags:
+- GDPR
+- CCCPA
 author:
   about headline: About the Analyst
   authors:
