@@ -62,23 +62,13 @@ defaults:
       image: ''
       imageLocation: ''
 - scope:
-    path: home
+    path: resources
     type: pages
   values:
-    layout: home
-    about:
-      eyebrow: ''
-      title: ''
-      copy: ''
-      cta:
-      - link: ''
-        copy: ''
-        class: ''
-      list:
-        item:
-          title: ''
-          icon: ''
-          copy: ''
+    layout: resources-filtered
+    resources:
+      per page: '9'
+      category: ''
 - scope:
     path: products-and-services
     type: pages

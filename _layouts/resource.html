@@ -66,10 +66,19 @@ layout: page
                         {{ content }}
                     </div>
                     <div class="col-xs-12 col-md-4">
+                        {% if form.id != '' %}
+                        {% assign form = page.form %}
+                        {% include components/resources/form.html %}
+                        {% else %}
                         {% include components/resources/related.html %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+{% if page.author.about_headline != '' %}
+{% assign author = page.author %}
+{% include components/resources/author-bio.html %}
+{% endif %}
