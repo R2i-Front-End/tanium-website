@@ -7,5 +7,8 @@ hero:
   copy: Lorem ipsum dolor sit amet, consectatur adipiscing alit. Voluptas assumenda
     corporis, dignissimos, consectetur at harum.
   class: bg-primary-lt ta-center
+resources:
+  per page: 9
+  category: White Paper
 ---
 
