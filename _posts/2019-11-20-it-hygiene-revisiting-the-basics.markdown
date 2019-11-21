@@ -9,13 +9,11 @@ Over time, organizations have adapted to growing IT complexity with investments 
 
 Join as Chris Hallenbeck discusses the importance of taking a continuous approach to IT Hygiene. He’ll share how revisiting the basics of security and systems management can accelerate cross-functional processes, improve organizational security, and harmonize IT Ops and Security teams.
  
-
 ## In this 45-minute webinar, you’ll learn:
 
 * How to take an end-to-end approach to IT Hygiene that spans processes, tools, and departments.
 * How to drive alignment and collaboration between IT Ops and Security.
 * How Tanium delivers IT Hygiene with our proven platform for endpoint visibility and control
- 
 
 ## About the speaker: Chris Hallenbeck, CISO, Americas
 
