@@ -19,6 +19,8 @@ author:
     Warner on their global incident response team. He started his career as a Unix
     sys-admin at Binghamton University. When not chasing electrons he prefers to be
     20-30 meters under the sea.'
+form:
+  id: https://info.tanium.com/l/286192/2019-08-01/6dyxgq
 ---
 
 Over time, organizations have adapted to growing IT complexity with investments in best-of-breed tools, teams, and processes. However, this approach has only added complexity and made environments even harder to operate and secure. Operating today's environments requires revisiting the basics of security and systems management with a focus on simplification.
