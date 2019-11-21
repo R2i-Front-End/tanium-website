@@ -1,0 +1,41 @@
+/*  --------------------------------------------------------------------------  *\
+
+    FEEDS > FILTERS
+
+\*  --------------------------------------------------------------------------  */
+nav.filters {
+    margin: 0 0 ($gutter);
+    text-align: center;
+    
+    @media #{$mediaMd} {
+        margin: 0 0 ($gutter * 1.5);
+    }
+    
+    @media #{$mediaLg} {
+        margin: 0 0 ($gutter * 2);
+    }
+    
+    ul {
+        @include flex(space-between, stretch, null, row nowrap);
+    }
+    
+    li {
+        width: 14.25%;
+    }
+    
+    button {
+        @include position(relative, 0);
+        display: block;
+        width: 100%;
+        height: 100%;
+        padding: 2rem 1rem;
+        border: .1rem solid $white;
+        background: $primary-light;
+    }
+    
+    .jplist-selected {
+        z-index: 100;
+        background: $white;
+        box-shadow: 0 0 2.5rem rgba($primary, .25);
+    }
+}

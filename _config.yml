@@ -62,14 +62,6 @@ defaults:
       image: ''
       imageLocation: ''
 - scope:
-    path: resources
-    type: pages
-  values:
-    layout: resources-filtered
-    resources:
-      per page: '9'
-      category: ''
-- scope:
     path: products-and-services
     type: pages
   values:

@@ -6,4 +6,6 @@
     for each interactive component, we should have alteration files for each version.
 
 \*  --------------------------------------------------------------------------  */
-@import 'layouts/related';
+@import 'layouts/_related';
+@import 'layouts/_tiles';
+@import '_filters';

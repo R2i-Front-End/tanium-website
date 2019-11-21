@@ -1,0 +1,19 @@
+/*  --------------------------------------------------------------------------  *\
+
+    FEEDS > LAYOUTS > TILES
+
+\*  --------------------------------------------------------------------------  */
+.tiles {
+    @include flex(flex-start, stretch, null, row wrap);
+    margin: 0 ($gutterSm * -.5);
+    
+    .card {
+        @include flexItem(0, 0, auto);
+        width: calc(33.333% - #{$gutterSm});
+        margin: 0 ($gutterSm * .5);
+        
+        &:nth-child(n + 4) {
+            margin-top: $gutterSm;
+        }
+    }
+}
