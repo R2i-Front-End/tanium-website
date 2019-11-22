@@ -12,5 +12,11 @@ bottomCTA:
   eyebrow: Next Step
   title: Call out lorem ipsum dolor
   image: "/uploads/cta-bottom-1.png"
+intro:
+  eyebrow: 
+  title: 
+  text: 
+  facts:
+  - Key 1: 
 ---
 
