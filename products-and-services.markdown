@@ -33,6 +33,7 @@ intro:
     copy: sunt adio minus
   - figure: 47
     copy: sed fuga irure
+  class: 
 callout:
   title: Callout header consectetur adipiscing elit sit amet
   text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequuntur, molestias
@@ -41,6 +42,7 @@ callout:
   - link: "/#"
     copy: Learn More
     class: btn-primary
+  class: bg-primary-lt
 solutions:
   eyebrow: Solutions
   title: Challenges We Solve Lorem Ipsum Dolor
@@ -65,6 +67,7 @@ solutions:
   - link: "/#"
     copy: Explore all solutions
     class: btn-primary
+  class: 
 industries:
   eyebrow: Industries
   title: Explore Tanium's Industries
@@ -87,6 +90,7 @@ industries:
   - link: "/#"
     copy: Higher Education
     icon image: 
+  class: bg-secondary
 layout: storytelling
 ---
 
