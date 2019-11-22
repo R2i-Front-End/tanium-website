@@ -29,7 +29,8 @@ layout: default
                         data-path="default"
                         data-group="resources"
                         name="type"
-                        data-mode="radio">
+                        data-mode="radio"
+                        data-selected="true">
                             All
                     </button>
                 </li>
@@ -53,8 +54,14 @@ layout: default
             <div class="jplist-holder" data-type="pages">
                 <button type="button" data-type="page">{pageNumber}</button>
             </div>
-            <button type="button" data-type="prev">‹</button>
-            <button type="button" data-type="next">›</button>
+            <button type="button" data-type="prev">
+                <span class="fas fa-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button type="button" data-type="next">
+                <span class="fas fa-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </button>
         </nav>
     </div>
 </section>

@@ -4,7 +4,7 @@
         <div class="row ha-right va-center">
             <div class="col-xs-12 col-md-8 col-lg-6">
                 <h1{% if hero['icon image'] %} class="has-icon"{% endif %}>
-                    {% if hero['icon image'] %}
+                    {% if hero['icon image'] != '' %}
                     <img src="{{ hero['icon image'] }}" alt="{{ hero.title }}" />
                     {% endif %}
                     {{ hero.title }}
