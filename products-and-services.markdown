@@ -11,6 +11,10 @@ hero:
 bottomCTA:
   eyebrow: Next Step
   title: Call out lorem ipsum dolor
+  cta:
+  - link: "/#"
+    copy: CTA lorem ipsum
+    class: btn-primary
   image: "/uploads/cta-bottom-1.png"
 intro:
   eyebrow: Section Tag
