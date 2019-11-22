@@ -13,10 +13,17 @@ bottomCTA:
   title: Call out lorem ipsum dolor
   image: "/uploads/cta-bottom-1.png"
 intro:
-  eyebrow: 
-  title: 
+  eyebrow: Section Tag
+  title: Business Objectives alias, ut reciendis delenti
   text: 
   facts:
-  - Key 1: 
+  - figure: 123
+    copy: fugit alias
+  - figure: 87
+    copy: veniam amet ex
+  - figure: 47
+    copy: sunt adio minus
+  - figure: 47
+    copy: sed fuga irure
 ---
 
