@@ -87,5 +87,6 @@ industries:
   - link: "/#"
     copy: Higher Education
     icon image: 
+layout: storytelling
 ---
 
