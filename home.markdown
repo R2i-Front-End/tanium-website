@@ -49,7 +49,7 @@ about:
       demanding enterprises and organizations, including half of the Fortune 100 and
       four out of five US military branches.
   announcement:
-    icon image: "/uploads/product-performance.png"
+    icon image: "/uploads/icon-performance.png"
     title: Announcing Tanium Performance
     text: Monitor, investigate and remediate endpoint performance issues, quickly
       and at scale.
