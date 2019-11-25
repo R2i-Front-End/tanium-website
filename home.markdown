@@ -74,7 +74,8 @@ customers:
   - link: "/#"
     copy: View Customer Success
     class: 
-  class: bg-tertiary-lt ta-center
+  class: bg-tertiary-lt bg-img-bottom ta-center
+  background image: "/uploads/bg-city-scape.jpg"
 resources:
   eyebrow: Resources
   title: Latest Thinking
@@ -110,7 +111,8 @@ success:
   - link: "/#"
     copy: Explore community
     class: 
-  class: bg-secondary
+  class: bg-secondary bg-img-bottom
+  background image: "/uploads/bg-success.jpg"
 layout: home
 ---
 
