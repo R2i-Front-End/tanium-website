@@ -1,0 +1,22 @@
+<section>
+    <div class="cnt">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10">
+                <h2>
+                    <span class="eyebrow">{{ accordion.eyebrow }}</span>
+                    {{ accordion.title }}
+                </h2>
+                <dl class="accordion">
+                    {% assign i = 0 %}
+                    {% for panel in accordion.panels %}
+                    <dt role="heading" aria-level="3"><button id="accordionSect{{ i }}Toggle" aria-expanded="{% if i == 0 %}true{% else %}false{% endif %}" aria-controls="accordionSect{{ i }}" type="button" {% if i == 0 %}aria-disabled="true"{% endif %}>{{ panel.title }}</button></dt>
+                    <dd id="accordionSect{{ i }}" aria-labelledby="accordionSect{{ i }}Toggle" {% if i > 0 %}hidden{% endif %}>
+                        {{ panel.content }}
+                    </dd>
+                    {% assign i = i | plus:1 %}
+                    {% endfor %}
+                </dl>
+            </div>
+        </div>
+    </div>
+</section>

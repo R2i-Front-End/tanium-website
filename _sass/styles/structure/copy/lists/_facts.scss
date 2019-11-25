@@ -1,6 +1,5 @@
 /* CSS Document */
-.list-facts {
-    margin: $gutter ($gutter * -.5);
+.list-facts, .grid-facts {
     
     @media #{$mediaMd} {
         @include flex(space-between, stretch, null, row wrap);
@@ -14,15 +13,41 @@
         }
         
         @media #{$mediaMd} {
-            @include flexItem(1, 0, auto);
-            width: calc(33.333% - #{$gutter});
-            min-width: calc(25% - #{$gutter});
-            max-width: calc(50% - #{$gutter});
-            margin: 0 ($gutter * .5);
+            margin: 0 ($gutterSm * .5);
         
             + li {
-                margin: 0 ($gutter * .5);
+                margin: 0 ($gutterSm * .5);
             }
+        }
+    }
+}
+.list-facts {
+    margin: $gutter ($gutterSm * -.5);
+    
+    li {
+        
+        @media #{$mediaMd} {
+            @include flexItem(1, 0, auto);
+            width: calc(33.333% - #{$gutterSm});
+            min-width: calc(25% - #{$gutterSm});
+            max-width: calc(50% - #{$gutterSm});
+            
+            &:nth-child(n + 5) {
+                margin-top: $gutterSm;
+            }
+        }
+    }
+}
+
+.grid-facts {
+    margin: 0 ($gutterSm * -.5);
+    
+    li {
+        margin: 0 ($gutterSm * .5);
+        width: calc(50% - #{$gutterSm});
+        
+        &:nth-child(n + 3) {
+            margin-top: $gutterSm;
         }
     }
 }

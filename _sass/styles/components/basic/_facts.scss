@@ -55,5 +55,18 @@
                 content: "";
             }
         }
+        
+        &.sm {
+        
+            h3 {
+                padding: ($gutterSm * .5);
+            }
+
+            strong {
+                font-size: 6rem;
+                padding: 0 0 (($gutterSm * .5) + .2);
+                margin: 0 0 ($gutterSm * .5);
+            }
+        }
     }
 }

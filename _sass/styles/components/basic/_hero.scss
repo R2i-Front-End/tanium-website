@@ -10,12 +10,21 @@
 .hero {
     @include position(relative, 0);
     padding: $gutterSm 0;
+    
+    .row {
+        > :first-child {
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
     /*  =---------------------------------------------------------------------  *\
     
       IMPORT STYLES FOR DIFFERENT HERO TYPES
     
     \*  ----------------------------------------------------------------------  */
     @import 'heroes/types/_home';
+    @import 'heroes/types/_tier-1';
     @import 'heroes/types/_product';
     @import 'heroes/types/_resource';
     /*  =---------------------------------------------------------------------  *\

@@ -16,13 +16,13 @@ bottomCTA:
     copy: CTA lorem ipsum
     class: btn-primary
   image: "/uploads/cta-bottom-1.png"
-intro:
+introFacts:
   eyebrow: Section Tag
   title: Business Objectives alias, ut reciendis delenti
   text: "Business objectives dolor sit amet, consectetur adipisicng elit. Libero alias,
-    ut reciendis delenti distincto assumenda \x03saepe inventore sint harum labore.
-    Magnam atque ad, \x03ipsa temporibus vel eum! Eius numquam reprehenderit, deleniti
-    voluptatibus ratione, veniam ducimus quia  \x03porro officia quae dicta alias,
+    ut reciendis delenti distincto assumenda inventore sint harum labore.
+    Magnam atque ad, temporibus vel eum! Eius numquam reprehenderit, deleniti
+    voluptatibus ratione, veniam ducimus quia officia quae dicta alias,
     atque et hic fugiat error."
   facts:
   - figure: 123
@@ -68,10 +68,10 @@ solutions:
     copy: Explore all solutions
     class: btn-primary
   class: 
-industries:
+explore:
   eyebrow: Industries
   title: Explore Tanium's Industries
-  industries:
+  links:
   - link: "/#"
     copy: Financial Services
     icon image: "/uploads/icon-news.png"

@@ -1,0 +1,25 @@
+<section{% if explore.class %} class="{{ explore.class }}"{% endif %}>
+    <div class="cnt">
+        <div class="row ha-center va-center">
+            <div class="col-xs-12 col-lg-10">
+                <h2>
+                    <small class="eyebrow">{{ explore.eyebrow }}</small>
+                    {{ explore.title }}
+                </h2>
+                <nav class="explore">
+                    <ul>
+                        {% for link in explore.links %}
+                        <li>
+                            <a href="{{ link.link }}">
+                                <img src="{{ link['icon image'] }}" alt="Icon {{ link.title }}" />
+                                <h3 class="h4">{{ link.copy }}</h3>
+                                <span class="fas fa-arrow-right"></span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</section>

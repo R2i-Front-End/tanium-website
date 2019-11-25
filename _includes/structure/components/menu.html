@@ -44,7 +44,7 @@
             {% for child in root.children %}
             <li>
                 {% if child.link %}
-                <a href="{{ child.link }}">{{ child.name }}</a>
+                <a href="{{ child.link }}">{% if child.icon %}<img src="{{ child.icon }}" alt="Icon for {{ child.name }}" />{% endif %}{{ child.name }}</a>
                 {% else %}
                 <span>{{ child.name }}</span>
                 {% endif %}
@@ -55,7 +55,7 @@
                 <ul>
                     {% for gc in child.children %}
                     <li>
-                        <a href="{{ gc.link }}">{{ gc.name }}</a>
+                        <a href="{{ gc.link }}">{% if gc.icon %}<img src="{{ gc.icon }}" alt="Icon for {{ gc.name }}" />{% endif %}{{ gc.name }}</a>
                         {% if gc.description %}
                         <em>{{ gc.description }}</em>
                         {% endif %}

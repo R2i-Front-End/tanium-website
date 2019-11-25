@@ -1,9 +1,9 @@
 /*  --------------------------------------------------------------------------  *\
 
-    HEROES > TYPE > PRODUCT
+    HEROES > TYPE > TIER 1
 
 \*  --------------------------------------------------------------------------  */
-&.product {
+&.tier-1 {
     padding: 0;
     
     .cnt {
@@ -18,7 +18,6 @@
     @media #{$mediaLg} {
         .row {
             > :first-child {
-                margin-right: -8.333%;
                 padding: ($gutterSm) ($gutter * .5);
             }
         }

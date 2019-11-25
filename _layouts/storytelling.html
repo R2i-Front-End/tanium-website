@@ -1,5 +1,23 @@
 ---
 layout: page
 ---
-
-<h1> This is a storytelling page!</h1>
+{% if page.intro %}
+{% assign intro = page.intro %}
+{% include components/sections/global/intro.html %}
+{% endif %}
+{% if page.introFacts %}
+{% assign introFacts = page.introFacts %}
+{% include components/sections/global/intro-w-facts.html %}
+{% endif %}
+{% if page.callout %}
+{% assign callout = page.callout %}
+{% include components/basic/ctas/call-out.html %}
+{% endif %}
+{% if page.solutions %}
+{% assign quicklinks = page.solutions %}
+{% include components/sections/global/quick-links.html %}
+{% endif %}
+{% if page.explore %}
+{% assign explore = page.explore %}
+{% include components/sections/global/explore.html %}
+{% endif %}

@@ -1,0 +1,93 @@
+/*  --------------------------------------------------------------------------  *\
+
+    NAV - EXPLORE
+
+\*  --------------------------------------------------------------------------  */
+&.explore {
+    margin: $gutterSm 0 0;
+    
+    @media #{$mediaMd} {
+        margin: ($gutterSm * 1.5) 0 0;
+    }
+    
+    @media #{$mediaLg} {
+        margin: $gutter 0 0;
+    }
+    
+    ul {
+        @media #{$mediaMd} {
+            @include flex(space-between, stretch, null, row wrap);
+        }
+    }
+    
+    li {
+        padding: 0;
+        border-top: .1rem solid currentColor;
+        
+        
+        &:last-child {
+            border-bottom: .1rem solid currentColor;
+        }
+        
+        @media #{$mediaMd} {
+            @include flexItem(0, 0, auto);
+            width: calc(50% - #{$gutter * .5});
+            
+            &:nth-last-child(2) {
+                border-bottom: .1rem solid currentColor;
+            }
+        }
+    }
+    
+    a {
+        display: block;
+        @include clearfix();
+        padding: 1.5rem 1rem 1.5rem 0;
+        color: currentColor;
+        @include boxShadow((0 0 0 rgba($primary, 0)));
+        
+        @media #{$mediaMd} {
+            padding: 2.25rem 2rem 2.25rem 0;
+        }
+        
+        @media #{$mediaLg} {
+            padding: 3rem 2rem 3rem 0;
+        }
+        
+        @include hover {
+            background: $white;
+            color: $primary;
+            @include boxShadow((0 0 #{$gutterSm * .5} rgba($primary, 0.5)));
+            
+            img {
+                @include transform(translate(2rem, 0));
+            }
+            
+            .fas {
+                color: $accent-1;
+            }
+        }
+    }
+    
+    img {
+        float: left;
+        width: 4rem;
+        margin: 0 4rem 0 0;
+        @include transition(all .25s linear);
+    }
+    
+    h3 {
+        float: left;
+        margin: 0;
+        line-height: 3rem;
+    }
+    
+    .fas {
+        float: right;
+        line-height: 3rem;
+    }
+    
+    p {
+        display: none;
+    }
+}

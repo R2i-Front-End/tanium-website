@@ -2,7 +2,7 @@
 <header class="hero {{ hero.class }}">
     <div class="cnt">
         <div class="row ha-right va-center">
-            <div class="col-xs-12 col-md-8 col-lg-6">
+            <div class="col-xs-12 col-md-8 {% if hero.class contains "tier-1" %}col-lg-5{% else %}col-lg-6{% endif %}">
                 <h1{% if hero['icon image'] %} class="has-icon"{% endif %}>
                     {% if hero['icon image'] != '' %}
                     <img src="{{ hero['icon image'] }}" alt="{{ hero.title }}" />
@@ -10,7 +10,7 @@
                     {{ hero.title }}
                 </h1>
                 <p class="intro">{{ hero.copy }}</p>
-                {% if hero.cta %}
+                {% if hero.cta[0].link != '' %}
                 {% for cta in hero.cta %}
                 <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
                 {% endfor %}

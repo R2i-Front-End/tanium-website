@@ -1,0 +1,16 @@
+<section{% if callout.class %} class="{{ callout.class }}"{% endif %}>
+    <div class="cnt">
+        <div class="row va-center">
+            <div class="col-xs-12 col-md-6"></div>
+            <div class="col-xs-12 col-md-6 col-lg-5">
+                <h2>{{ callout.title }}</h2>
+                {% if callout.text %}
+                <p>{{ callout.text }}</p>
+                {% endif %}
+                {% for cta in callout.cta %}
+                <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

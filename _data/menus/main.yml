@@ -46,47 +46,57 @@
   link: /products-and-services
   class: products
   children:
-    - name: Core
-      children:
-        - name: Core Platform
-          link: /products-and-services/core/core-platform
+    - name: Explore Core Platform
+      link: /prodcuts-and-services/core
+      icon: /uploads/icon-core.png
     - name: IT Operations
       children:
         - name: Asset
           link: /products-and-services/it-operations/asset
           description: Asset Management
+          icon: /uploads/icon-asset.png
         - name: Deploy
           link: /products-and-services/it-operations/deploy
           description: Software Managmenet
+          icon: /uploads/icon-deploy.png
         - name: Discover
           link: /products-and-services/it-operations/discover
           description: Unmanaged Asset Discovery
+          icon: /uploads/icon-discover.png
         - name: Patch
           link: /products-and-services/it-operations/patch
           description: Patch Management
+          icon: /uploads/icon-patch.png
         - name: Map
           link: /products-and-services/it-operations/map
           description: Application Dependency mapping
+          icon: /uploads/icon-map.png
         - name: Performance
           link: /products-and-services/it-operations/performance
           description: Endpoint Detection & Response
+          icon: /uploads/icon-performance.png
     - name: Security & Risk
       children:
         - name: Comply
           link: /products-and-services/security-and-risk/comply
           description: Vulnerability & Configuration Assessment
+          icon: /uploads/icon-comply.png
         - name: Integrity Montior
           link: /products-and-services/security-and-risk/integrity-monitor
           description: File Integrity Monitoring
+          icon: /uploads/icon-integrity-monitor.png
         - name: Protect
           link: /products-and-services/security-and-risk/protect
           description: Endpoint Protection Management
+          icon: /uploads/icon-protect.png
         - name: Reveal
           link: /products-and-services/security-and-risk/reveal
           description: Sensitive Data Discovery
+          icon: /uploads/icon-reveal.png
         - name: Threat Response
           link: /products-and-services/security-and-risk/threat-response
           description: Endpoint Detection & Response
+          icon: /uploads/icon-threat-response.png
     - name: Services
       children:
         - name: Enterprise Services
