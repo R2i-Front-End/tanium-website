@@ -17,6 +17,7 @@ video:
   video: 280584796
   caption: Caption for inline image or video lorem ipsum dolor sit amet, consectetur
     adipiscing elit. Commodi, libero cumque sunt dolor, eos beatae.
+  class: bg-primary-lt
 accordion:
   eyebrow: Section Title
   title: Accordions Header
@@ -36,6 +37,7 @@ accordion:
       Lorem ipsum dolor sit amet, consectetur adipisicng elit. Libero alias, ut reciendis delenti distincto assumenda saepe inventore sint harum labore. Magnam atque ad vel eum! Eius numquam reprehenderit, deleniti.
 
       Mollitia magnam laborum perspiciatis tempora illum suscipit minus, pariatur facilis, vel ipsa minima labore, ad ipsam dicta cum vero. Rem, error reprehenderit a sequi, fugiat dolorem odio laboriosam labore? Consectetur illum nam dicta ipsam commodi recusandae.
+  class: 
 layout: interior
 ---
 
