@@ -3,6 +3,7 @@ title: Test Interior Layout
 date: 2019-11-25 16:24:00 Z
 hero:
   title: Generic interior title lorem ipsum dolor
+  mobile image: "/uploads/hero-performance.png"
   class: bg-primary-lt
 bottomCTA:
   eyebrow: Next Step
