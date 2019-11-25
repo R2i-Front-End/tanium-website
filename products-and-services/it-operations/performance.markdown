@@ -6,7 +6,7 @@ hero:
   title: Tanium Performance
   copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque itaque, molestiae
     fuga officiis dolorum natus.
-  icon image: "/uploads/product-performance-f12d24.png"
+  icon image: "/uploads/icon-performance.png"
   desktop image: "/uploads/hero-performance.png"
   class: product bg-primary-lt
 bottomCTA:
