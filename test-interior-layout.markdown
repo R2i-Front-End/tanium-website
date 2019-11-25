@@ -1,6 +1,30 @@
 ---
 title: Test Interior Layout
 date: 2019-11-25 16:24:00 Z
+video:
+  title: Section Tag
+  video: 
+  caption: Caption for inline image or video lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Commodi, libero cumque sunt dolor, eos beatae.
+accordion:
+  eyebrow: Section Title
+  title: Accordions Header
+  panels:
+  - title: Lorem ipsum dolor sit amet
+    text: |-
+      Lorem ipsum dolor sit amet, consectetur adipisicng elit. Libero alias, ut reciendis delenti distincto assumenda saepe inventore sint harum labore. Magnam atque ad vel eum! Eius numquam reprehenderit, deleniti.
+
+      Mollitia magnam laborum perspiciatis tempora illum suscipit minus, pariatur facilis, vel ipsa minima labore, ad ipsam dicta cum vero. Rem, error reprehenderit a sequi, fugiat dolorem odio laboriosam labore? Consectetur illum nam dicta ipsam commodi recusandae.
+  - title: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    text: |-
+      Lorem ipsum dolor sit amet, consectetur adipisicng elit. Libero alias, ut reciendis delenti distincto assumenda saepe inventore sint harum labore. Magnam atque ad vel eum! Eius numquam reprehenderit, deleniti.
+
+      Mollitia magnam laborum perspiciatis tempora illum suscipit minus, pariatur facilis, vel ipsa minima labore, ad ipsam dicta cum vero. Rem, error reprehenderit a sequi, fugiat dolorem odio laboriosam labore? Consectetur illum nam dicta ipsam commodi recusandae.
+  - title: Fuga harum, est reprehenderit, sit praesentium illo
+    text: |-
+      Lorem ipsum dolor sit amet, consectetur adipisicng elit. Libero alias, ut reciendis delenti distincto assumenda saepe inventore sint harum labore. Magnam atque ad vel eum! Eius numquam reprehenderit, deleniti.
+
+      Mollitia magnam laborum perspiciatis tempora illum suscipit minus, pariatur facilis, vel ipsa minima labore, ad ipsam dicta cum vero. Rem, error reprehenderit a sequi, fugiat dolorem odio laboriosam labore? Consectetur illum nam dicta ipsam commodi recusandae.
 layout: interior
 ---
 
