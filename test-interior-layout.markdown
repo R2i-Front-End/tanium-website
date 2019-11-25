@@ -1,6 +1,13 @@
 ---
 title: Test Interior Layout
 date: 2019-11-25 16:24:00 Z
+bottomCTA:
+  eyebrow: Next Step
+  title: Call out lorem ipsum dolor
+  cta:
+  - link: "/#"
+    copy: CTA lorem ipsum
+    class: btn-primary
 video:
   eyebrow: Section Tag
   video: 280584796
