@@ -12,6 +12,7 @@ bottomCTA:
   - link: "/#"
     copy: CTA lorem ipsum
     class: btn-primary
+  class: alt
 video:
   eyebrow: Section Tag
   video: 280584796
