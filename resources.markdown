@@ -1,7 +1,7 @@
 ---
 title: Resources
 date: 2019-11-20 19:01:00 Z
-position: 8
+position: 7
 hero:
   title: Resources
   copy: Lorem ipsum dolor sit amet, consectatur adipiscing alit. Voluptas assumenda

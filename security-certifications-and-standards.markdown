@@ -1,7 +1,7 @@
 ---
 title: Security Certifications & Standards
 date: 2019-11-25 16:00:00 Z
-position: 9
+position: 8
 hero:
   title: Security Certifications & Standards
   copy: Lorem ipsum dolor sit amet consectetur adipscing elit!
