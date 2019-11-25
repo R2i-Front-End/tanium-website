@@ -1,6 +1,8 @@
 ---
 title: Privacy Policy
 date: 2019-11-25 16:04:00 Z
+hero:
+  title: Privacy Policy
 layout: interior
 ---
 
