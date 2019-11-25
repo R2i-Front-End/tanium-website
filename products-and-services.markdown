@@ -83,7 +83,7 @@ industries:
     icon image: "/uploads/icon-news.png"
   - link: "/#"
     copy: Retail
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     copy: State & Local Government
     icon image: "/uploads/icon-news.png"
