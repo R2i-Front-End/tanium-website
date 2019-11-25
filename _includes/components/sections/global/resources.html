@@ -1,0 +1,34 @@
+<section{% if video.class != "" %} class="{{ video.class }}"{% endif %}>
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-md-10 col-lg-8">
+                <h2>
+                    <span class="eyebrow">{{ resources.eyebrow }}</span>
+                    {{ resources.title }}
+                </h2>
+                <ul class="latest">
+                    {% assign resourceLimit = 3 %}
+                    {% if resources.amount != "" %}
+                    {% assign resourceLimit = resources.amount %}
+                    {% endif %}
+                    {% for resource in site.posts | limit: resourceLimit %}
+                    <li>
+                        <a href="#">
+                            <h3 class="h4">
+                                <small>{{ resource.categories[0] }}</small>
+                                {{ resource.title }}
+                            </h3>
+                            <span class="fas fa-arrow-right"></span>
+                        </a>
+                    </li>
+                    {% endfor %}
+                </ul>
+                <p class="ta-center">
+                    {% for cta in resources.cta %}
+                    <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                    {% endfor %}
+                </p>
+            </div>
+        </div>
+    </div>
+</section>

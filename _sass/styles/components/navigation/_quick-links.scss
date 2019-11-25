@@ -32,14 +32,6 @@
         }
     }
     
-    a {
-        display: block;
-        @include clearfix();
-        padding: 1.5rem 1rem;
-        background: $secondary-light;
-        color: $primary;
-    }
-    
     img {
         float: left;
         width: 4rem;
@@ -50,6 +42,7 @@
         float: left;
         margin: 0;
         line-height: 3rem;
+        @include transition(opacity .25s linear);
     }
     
     .fas {
@@ -58,7 +51,30 @@
     }
     
     p {
-        display: none;
+        @include position(absolute, null, (left, top), (50%, 50%), translate(-50%, -50%));
+        width: calc(100% - 2rem);
+        font-size: 1.4rem;
+        opacity: 0;
+        @include transition(opacity .25s linear);
+    }
+    
+    a {
+        @include position(relative);
+        display: block;
+        @include clearfix();
+        padding: 1.5rem 1rem;
+        background: $primary-light;
+        color: $primary;
+        
+        @include hover {
+            h3 {
+                opacity: 0;
+            }
+            
+            p {
+                opacity: 1;
+            }
+        }
     }
     
     @media #{$mediaMd} {
