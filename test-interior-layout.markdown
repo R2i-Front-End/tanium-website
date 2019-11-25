@@ -2,7 +2,7 @@
 title: Test Interior Layout
 date: 2019-11-25 16:24:00 Z
 video:
-  title: Section Tag
+  eyebrow: Section Tag
   video: 280584796
   caption: Caption for inline image or video lorem ipsum dolor sit amet, consectetur
     adipiscing elit. Commodi, libero cumque sunt dolor, eos beatae.
