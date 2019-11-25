@@ -111,7 +111,7 @@ success:
   - link: "/#"
     copy: Explore community
     class: 
-  class: bg-secondary bg-img-bottom
+  class: bg-secondary bg-img-center-right
   background image: "/uploads/bg-success.jpg"
 layout: home
 ---
