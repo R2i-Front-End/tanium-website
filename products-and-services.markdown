@@ -74,22 +74,22 @@ industries:
   industries:
   - link: "/#"
     copy: Financial Services
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     copy: Healthcare
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     copy: Federal Government
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     copy: Retail
     icon image: 
   - link: "/#"
     copy: State & Local Government
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     copy: Higher Education
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   class: bg-secondary
 layout: storytelling
 ---
