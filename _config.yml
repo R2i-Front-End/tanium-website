@@ -60,7 +60,7 @@ defaults:
         copy: ''
         class: ''
       image: ''
-      imageLocation: ''
+      class: ''
 - scope:
     path: products-and-services
     type: pages

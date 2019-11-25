@@ -1,8 +1,8 @@
-<section>
+<section{% if video.class != "" %} class="{{ video.class }}"{% endif %}>
     <div class="cnt">
-        <div class="row">
+        <div class="row ha-center">
             <div class="col-xs-12 col-md-10 col-lg-8">
-                <h2 class="eybrow">{{ video.eyebrow }}</h2>
+                <h2 class="eyebrow">{{ video.eyebrow }}</h2>
                 <figure>
                     <div class="has-video">
                         <iframe src="https://player.vimeo.com/video/{{ video.video }}"></iframe>

@@ -7,13 +7,13 @@
 
 \*  --------------------------------------------------------------------------  */
 @import '_accordions';
-@import '_banners';
-@import '_carousels';
-@import '_dialogs';
-@import '_tabs-mobi';
-@import '_tabs-hori';
-@import '_tabs-vert';
-@import '_toggle';
+//@import '_banners';
+//@import '_carousels';
+//@import '_dialogs';
+//@import '_tabs-mobi';
+//@import '_tabs-hori';
+//@import '_tabs-vert';
+//@import '_toggle';
 /*  --------------------------------------------------------------------------  *\
 
     ANIMATIONS.CSS
@@ -33,8 +33,9 @@
     We also use animations.css to control the animated loading of content. Examples 
     of all the animations available are located in interactive/animations.html.
 
-\*  --------------------------------------------------------------------------  */
 @import '_animations';
+
+\*  --------------------------------------------------------------------------  */
 /*  --------------------------------------------------------------------------  *\
 
     EFFECTS LIBRARY
@@ -45,5 +46,6 @@
     These are meant to show what we can do, and be a solid starting point. They may
     require some additional work to get things to work completely as expected.
 
-\*  --------------------------------------------------------------------------  */
 @import '_effects';
+
+\*  --------------------------------------------------------------------------  */

@@ -1,6 +1,6 @@
-<section>
+<section{% if accordion.class != "" %} class="{{ accordion.class }}"{% endif %}>
     <div class="cnt">
-        <div class="row">
+        <div class="row ha-center">
             <div class="col-xs-12 col-lg-10">
                 <h2>
                     <span class="eyebrow">{{ accordion.eyebrow }}</span>
@@ -11,7 +11,7 @@
                     {% for panel in accordion.panels %}
                     <dt role="heading" aria-level="3"><button id="accordionSect{{ i }}Toggle" aria-expanded="{% if i == 0 %}true{% else %}false{% endif %}" aria-controls="accordionSect{{ i }}" type="button" {% if i == 0 %}aria-disabled="true"{% endif %}>{{ panel.title }}</button></dt>
                     <dd id="accordionSect{{ i }}" aria-labelledby="accordionSect{{ i }}Toggle" {% if i > 0 %}hidden{% endif %}>
-                        {{ panel.content }}
+                        {{ panel.text }}
                     </dd>
                     {% assign i = i | plus:1 %}
                     {% endfor %}
@@ -20,3 +20,4 @@
         </div>
     </div>
 </section>
+<script type="text/javascript" src="/assets/js/accordions.js"></script>

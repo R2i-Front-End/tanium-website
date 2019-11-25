@@ -17,10 +17,19 @@
             color: $tertiary;
             text-align: left;
             font-size: 1.8rem;
+            font-weight: 500;
             line-height: 1;
+            
+            @media #{$mediaMd} {
+                font-size: 2.2rem;
+            }
+            
+            @media #{$mediaLg} {
+                font-size: 2.6rem;
+            }
 
             @include hover {
-                color: $secondary;
+                color: $accent-3;
             }
 
             &[aria-expanded="true"] {
@@ -46,16 +55,4 @@
     
     \* -------------------------- */
     @import 'accordions/indicators/_plus-minus';
-    @import 'accordions/indicators/_chevron';
-    @import 'accordions/indicators/_triangle';
-    /* -------------------------- *\
-    
-    Sizing Options
-    
-    Comment out what you don't want to include.  Also, if only one style is used, remove the class
-    name from the imported file to reduce output of code.
-    
-    \* -------------------------- */
-    @import 'accordions/sizing/_sm';
-    @import 'accordions/sizing/_lg';
 }
