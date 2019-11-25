@@ -12,6 +12,7 @@ bottomCTA:
   - link: "/#"
     copy: CTA lorem ipsum
     class: btn-primary
+  image: "/uploads/cta-bottom-1.png"
   class: alt
 video:
   eyebrow: Section Tag
