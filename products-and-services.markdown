@@ -19,11 +19,10 @@ bottomCTA:
 introFacts:
   eyebrow: Section Tag
   title: Business Objectives alias, ut reciendis delenti
-  text: "Business objectives dolor sit amet, consectetur adipisicng elit. Libero alias,
-    ut reciendis delenti distincto assumenda inventore sint harum labore.
-    Magnam atque ad, temporibus vel eum! Eius numquam reprehenderit, deleniti
-    voluptatibus ratione, veniam ducimus quia officia quae dicta alias,
-    atque et hic fugiat error."
+  text: Business objectives dolor sit amet, consectetur adipisicng elit. Libero alias,
+    ut reciendis delenti distincto assumenda inventore sint harum labore. Magnam atque
+    ad, temporibus vel eum! Eius numquam reprehenderit, deleniti voluptatibus ratione,
+    veniam ducimus quia officia quae dicta alias, atque et hic fugiat error.
   facts:
   - figure: 123
     copy: fugit alias
