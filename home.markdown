@@ -71,9 +71,9 @@ customers:
   - figure: 4
     copy: of the 5 US Armed Forces
   cta:
-  - link: "/#"
+  - link: "/customer-success"
     copy: View Customer Success
-    class: "/customer-success"
+    class: 
   class: bg-primary-lt bg-img-bottom ta-center
   background image: "/uploads/bg-city-scape.jpg"
 resources:
