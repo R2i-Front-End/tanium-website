@@ -92,19 +92,19 @@ success:
   quick links:
   - icon image: "/uploads/icon-bubbles.png"
     title: Tanium Discussions
-    copy: 
+    copy: Lorem ipsum dolor sit amet consectetur adipscing elit.
     link: "/#"
   - icon image: "/uploads/icon-headset.png"
     title: Ask the Experts
-    copy: 
+    copy: Lorem ipsum dolor sit amet consectetur adipscing elit.
     link: "/#"
   - icon image: "/uploads/icon-alert.png"
     title: Tanium Blog
-    copy: 
+    copy: Lorem ipsum dolor sit amet consectetur adipscing elit.
     link: "/#"
   - icon image: "/uploads/icon-news.png"
     title: Best Practices
-    copy: 
+    copy: Lorem ipsum dolor sit amet consectetur adipscing elit.
     link: "/#"
   cta:
   - link: "/#"
