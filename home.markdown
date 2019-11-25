@@ -73,7 +73,7 @@ customers:
   cta:
   - link: "/#"
     copy: View Customer Success
-    class: 
+    class: "/customer-success"
   class: bg-primary-lt bg-img-bottom ta-center
   background image: "/uploads/bg-city-scape.jpg"
 resources:
