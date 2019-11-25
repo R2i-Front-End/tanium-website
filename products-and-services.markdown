@@ -46,7 +46,7 @@ callout:
 solutions:
   eyebrow: Solutions
   title: Challenges We Solve Lorem Ipsum Dolor
-  solutions:
+  quick links:
   - link: "/#"
     title: IT Hygiene
     copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
