@@ -14,6 +14,7 @@ bottomCTA:
     copy: See Tanium Live
     class: btn-primary
   image: "/uploads/cta-bottom-1.png"
+layout: interior
 ---
 
 If you think you may have found a security vulnerability affecting Tanium, please contact our product security team. You can use this PGP key, to encrypt any sensitive information.
