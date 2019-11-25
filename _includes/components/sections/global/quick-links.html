@@ -1,4 +1,4 @@
-<section class="{{ quicklinks.class }}">
+<section class="{{ quicklinks.class }}"{% if quicklinks['background image'] != "" %} style="background-image: url({{ quicklinks['background image'] }});"{% endif %}>
     <div class="cnt">
         <div class="row ha-center">
             <div class="col-xs-12 col-lg-10">

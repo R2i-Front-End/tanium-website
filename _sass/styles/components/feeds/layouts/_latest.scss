@@ -39,6 +39,7 @@
     .h4 {
         @include transform(translate(#{$gutterSm * -1}, 0));
         @include transition(transform .25s linear);
+        margin: 0;
     }
     
     a {

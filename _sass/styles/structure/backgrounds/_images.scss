@@ -1,0 +1,36 @@
+/*  --------------------------------------------------------------------------  *\
+
+    BACKGROUNDS > IMAGES
+
+\*  --------------------------------------------------------------------------  */
+[class*="bg-img-"] {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.bg-img-top-left {
+    background-position: 0 0;
+}
+.bg-img-center-left {
+    background-position: 0 50%;
+}
+.bg-img-bottom-left {
+    background-position: 0 100%;
+}
+.bg-img-top-right {
+    background-position: 100% 0;
+}
+.bg-img-center-right {
+    background-position: 100% 50%;
+}
+.bg-img-bottom-right {
+    background-position: 100% 100%;
+}
+.bg-img-top {
+    background-position: 50% 0;
+}
+.bg-img-center {
+    background-position: 50% 50%;
+}
+.bg-img-bottom {
+    background-position: 50% 100%;
+}
