@@ -50,19 +50,19 @@ solutions:
   - link: "/#"
     title: IT Hygiene
     copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     title: Compliance
     copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     title: Modernizing IT Operations
     copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   - link: "/#"
     title: Security
     copy: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    icon image: 
+    icon image: "/uploads/icon-news.png"
   cta:
   - link: "/#"
     copy: Explore all solutions
