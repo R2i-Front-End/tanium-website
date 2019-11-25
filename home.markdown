@@ -81,7 +81,7 @@ resources:
   title: Latest Thinking
   amount: 3
   cta:
-  - link: "/#"
+  - link: "/resources"
     copy: View all articles
     class: 
   class: 
