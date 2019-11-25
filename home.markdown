@@ -74,7 +74,7 @@ customers:
   - link: "/#"
     copy: View Customer Success
     class: 
-  class: bg-tertiary-lt bg-img-bottom ta-center
+  class: bg-primary-lt bg-img-bottom ta-center
   background image: "/uploads/bg-city-scape.jpg"
 resources:
   eyebrow: Resources
