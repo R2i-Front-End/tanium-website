@@ -54,7 +54,7 @@ about:
     text: Monitor, investigate and remediate endpoint performance issues, quickly
       and at scale.
     cta:
-    - link: "/#"
+    - link: "/products-and-services/it-operations/performance"
       copy: Explore now
       class: 
   class: 
