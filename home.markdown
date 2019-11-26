@@ -9,6 +9,7 @@ hero:
   cta:
   - link: "/see-tanium-live"
     copy: See Tanium in Action
+    class: btn-primary
   mobile image: "/uploads/home-mobile.png"
   desktop image: "/uploads/home-desktop.png"
   class: home
