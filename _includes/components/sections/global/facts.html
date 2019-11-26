@@ -13,12 +13,7 @@
                 </div>
                 <ul class="list-facts">
                     {% for fact in facts.facts %}
-                    <li class="fact">
-                        <h3>
-                            <strong>{{ fact.figure }}</strong>
-                            {{ fact.copy }}
-                        </h3>
-                    </li>
+                    {% include components/partials/fact.html %}
                     {% endfor %}
                 </ul>
                 {% if facts.cta[0].link %}

@@ -11,12 +11,7 @@
             <div class="col-xs-12 col-md-6 col-lg-5">
                 <ul class="grid-facts">
                     {% for fact in introFacts.facts %}
-                    <li class="fact sm">
-                        <h3>
-                            <strong>{{ fact.figure }}</strong>
-                            {{ fact.copy }}
-                        </h3>
-                    </li>
+                    {% include components/partials/fact.html %}
                     {% endfor %}
                 </ul>
             </div>
