@@ -19,9 +19,11 @@
                             </li>
                             {% endfor %}
                         </ul>
+                        {% if benefits.cta[0].link != '' %}
                         {% for cta in benefits.cta %}
-                        <a href="{{ cta.link }}" class="{% if cta.class %}{{ cta.class }}{% else %}btn-primary{% endif %}">{{ cta.copy }}</a>
+                        {% include components/basic/button.html %}
                         {% endfor %}
+                        {% endif %}
                     </div>
                 </div>
             </div>

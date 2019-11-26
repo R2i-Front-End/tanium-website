@@ -4,6 +4,8 @@
 
 \*  --------------------------------------------------------------------------  */
 & {
-    @include position(sticky, 1000, (top), (0));
-    width: 100%;
+    @media #{$mediaFullHeader} {
+        @include position(sticky, 1000, (top), (-4.1rem));
+        width: 100%;
+    }
 }

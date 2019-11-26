@@ -1,13 +1,20 @@
 ---
 layout: page
 ---
-
+{% if page.intro.eyebrow != '' %}
 {% assign intro = page.intro %}
 {% include /components/sections/global/intro.html %}
+{% endif %}
+{% if page.benefits.eyebrow != '' or page.benefits.title != '' %}
 {% assign benefits = page.benefits %}
 {% include /components/sections/products/benefits.html %}
+{% endif %}
+{% if page.features.eyebrow != '' or page.features.title != '' %}
 {% assign features = page.features %}
 {% include /components/sections/products/features.html %}
+{% endif %}
+{% if page.products.products[0].title != '' %}
 {% assign related = page.products %}
 {% include /components/sections/products/related.html %}
+{% endif %}
 {{ content }}

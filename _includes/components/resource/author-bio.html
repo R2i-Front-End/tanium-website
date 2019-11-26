@@ -1,0 +1,40 @@
+<section class="bg-secondary">
+    <div class="cnt">
+        <div class="row ha-center">
+            <div class="col-xs-12 col-lg-10">
+                <h2 class="eyebrow">{{ author["about headline"] }}</h2>
+                {% for author in author.authors %}
+                <div class="author">
+                    <img src="{{ author.image }}" alt="Headshot of {{ author.name }}" />
+                    <div>
+                        <h3 class="h2">{{ author.name }}</h3>
+                        <p>{{ author["bio text"] }}</p>
+                        {% if author.linkedin != '' or author.twitter != '' %}
+                        <nav class="share">
+                            <ul>
+                                {% if author.twitter != '' %}
+                                <li>
+                                    <a href="{{ author.twitter }}">
+                                        <span class="fab fa-twitter"></span>
+                                        <span class="sr-only">Follow {{ author.name }} on Twitter</span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                                {% if author.linkedin != '' %}
+                                <li>
+                                    <a href="{{ author.linkedin }}">
+                                        <span class="fab fa-linkedin-in"></span>
+                                        <span class="sr-only">Connect with {{ author.name }} on LinkedIn</span>
+                                    </a>
+                                </li>
+                                {% endif %}
+                            </ul>
+                        </nav>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

@@ -2,6 +2,7 @@
     <div class="cnt">
         <div class="row ha-center">
             <div class="col-xs-12 col-lg-10">
+                {% if about.cta[0].link %}
                 <div class="row va-bottom">
                     <div class="col-xs-12 col-md-8 col-lg-6">
                         <h2>
@@ -16,6 +17,13 @@
                         {% endfor %}
                     </div>
                 </div>
+                {% else %}
+                <h2>
+                    <small class="eyebrow">{{ about.eyebrow }}</small>
+                    {{ about.title }}
+                </h2>
+                <p class="intro">{{ about.text }}</p>
+                {% endif %}
                 <ul class="list-highlights">
                     {% for highlight in about.highlights %}
                     <li>

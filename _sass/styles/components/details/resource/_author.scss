@@ -1,0 +1,23 @@
+/*  --------------------------------------------------------------------------  *\
+
+    DETAILS > RESOURCE > AUTHOR
+
+\*  --------------------------------------------------------------------------  */
+.author {
+    
+    @media #{$mediaMd} {
+        @include flex(space-between, flex-start, null, row nowrap);
+
+        > img {
+            @include flexItem(0, 0, auto);
+            width: 25%;
+            margin: 0 $gutterSm ($gutterSm * .5) 0;
+            border-radius: 100%;
+        }
+        
+        > div {
+            @include flexItem(0, 1, auto);
+            width: 100%;
+        }
+    }
+}

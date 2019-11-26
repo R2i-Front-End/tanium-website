@@ -23,50 +23,13 @@ layout: page
     <div class="cnt">
         <div class="row ha-right">
             <div class="col-xs-12 col-lg-11">
-                <div class="res-info">
-                    <p class="by">By: John Doe - January 24, 2019</p>
-                    <nav class="share">
-                        <h2 class="h6">Share</h2>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <span class="fab fa-facebook-f"></span>
-                                    <span class="sr-only">Share on Facebook</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fab fa-twitter"></span>
-                                    <span class="sr-only">Share on Twitter</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fab fa-linkedin-in"></span>
-                                    <span class="sr-only">Share on LinkedIn</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fas fa-envelope-open"></span>
-                                    <span class="sr-only">Email this Resource</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span class="fas fa-print"></span>
-                                    <span class="sr-only">Print this Resource</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+                {% include components/resource/res-info.html %}
                 <div class="row">
                     <div class="col-xs-12 col-md-8">
                         {{ content }}
                     </div>
                     <div class="col-xs-12 col-md-4">
-                        {% if form.id != '' %}
+                        {% if form.id != nil %}
                         {% assign form = page.form %}
                         {% include components/resources/form.html %}
                         {% else %}
@@ -78,7 +41,7 @@ layout: page
         </div>
     </div>
 </section>
-{% if page.author.about_headline != '' %}
+{% if page.author.authors[0].name != '' %}
 {% assign author = page.author %}
-{% include components/resources/author-bio.html %}
+{% include components/resource/author-bio.html %}
 {% endif %}
