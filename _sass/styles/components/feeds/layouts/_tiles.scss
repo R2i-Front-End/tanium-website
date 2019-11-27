@@ -16,4 +16,8 @@
             margin-top: $gutterSm;
         }
     }
+    
+    &.featured {
+        margin-bottom: $gutter;
+    }
 }

@@ -1,10 +1,11 @@
 {% assign featured = site.posts | where: 'is featured', true | limit: 3 %}
 <h2 class="eyebrow">Featured Resources</h2>
-<div role="feed" class="tiles">
+<div role="feed" class="tiles featured">
     {% for resource in featured %}
     <a href="{{ resource.url }}" class="card">
         <p class="type">{{ resource.categories }}</p>
         <h2 class="h5">{{ resource.title }}</h2>
+        <p>{{ content | truncate: 125 }}</p>
         <span class="fas fa-arrow-right"></span>
     </a>
     {% endfor %}
