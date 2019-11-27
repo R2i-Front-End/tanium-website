@@ -3,6 +3,7 @@ title: Unite Your IT Operations and Security Teams
 date: 2019-11-20 18:58:00 Z
 categories:
 - Webinar On-demand
+is featured: true
 ---
 
 Our latest research suggests that almost all CIOs and CISOs have made trade-offs in how well they can protect their organizations from cyber threats, outages and other forms of disruption. Although part of the challenge is a lack of true visibility and control across endpoints, it isn't just a technology problem. IT leaders can’t get the accurate information they need to make immediate decisions about the health of their IT environment for several reasons.
