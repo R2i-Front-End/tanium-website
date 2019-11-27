@@ -6,5 +6,6 @@ categories:
 tags:
 - Tanium Patch
 - Security
+is featured: true
 ---
 
