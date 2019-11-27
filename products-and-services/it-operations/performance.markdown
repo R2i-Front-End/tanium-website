@@ -74,13 +74,13 @@ products:
   title: Explore Related Products Lorem Ipsum Dolor Sit
   products:
   - title: Tanium Asset
-    icon image: "/uploads/product-performance-f12d24.png"
+    icon image: "/uploads/icon-asset.png"
   - title: Tanium Deploy
-    icon image: "/uploads/product-performance-f12d24.png"
+    icon image: "/uploads/icon-deploy.png"
   - title: Tanium Discover
-    icon image: "/uploads/product-performance-f12d24.png"
+    icon image: "/uploads/icon-discover.png"
   - title: Tanium Patch
-    icon image: "/uploads/product-performance-f12d24.png"
+    icon image: "/uploads/icon-patch.png"
   cta:
   - link: "/products-and-services"
     copy: Explore all products
