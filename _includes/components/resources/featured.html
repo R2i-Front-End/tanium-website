@@ -1,4 +1,5 @@
 {% assign featured = site.posts | where: 'is featured' | limit: 3 %}
+<h2>Featured Resources</h2>
 <div role="feed" class="tiles" data-jplist-group="resources">
     {% for resource in featured %}
     <a href="{{ resource.url }}" class="card" data-jplist-item>
