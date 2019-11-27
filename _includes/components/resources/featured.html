@@ -1,10 +1,10 @@
-<!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
-</body>
-</html>
+{% assign featured = site.posts | where: 'is featured' | limit: 3 %}
+<div role="feed" class="tiles" data-jplist-group="resources">
+    {% for resource in featured %}
+    <a href="{{ resource.url }}" class="card" data-jplist-item>
+        <p class="type">{{ resource.categories }}</p>
+        <h2 class="h5">{{ resource.title }}</h2>
+        <span class="fas fa-arrow-right"></span>
+    </a>
+    {% endfor %}
+</div>
