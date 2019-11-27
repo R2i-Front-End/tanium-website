@@ -36,6 +36,7 @@ defaults:
         bio text: ''
     form:
       id: ''
+    featured: false
 - scope:
     path: ''
     type: pages
