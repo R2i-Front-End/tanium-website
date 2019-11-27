@@ -1,0 +1,30 @@
+<nav class="filters">
+    <h2 class="h5">Filter by subject</h2>
+    <ul>
+        {% for category in site.categories %}
+        <li>
+            <button
+                data-jplist-control="buttons-text-filter"
+                data-path=".type"
+                data-group="resources"
+                name="type"
+                data-mode="radio"
+                data-text="{{ category[0] }}"
+                data-selected="false">
+                {{ category[0] }}
+            </button>
+        </li>
+        {% endfor %}
+        <li>
+            <button
+                data-jplist-control="buttons-text-filter"
+                data-path="default"
+                data-group="resources"
+                name="type"
+                data-mode="radio"
+                data-selected="true">
+                    All
+            </button>
+        </li>
+    </ul>
+</nav>

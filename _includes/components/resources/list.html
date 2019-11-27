@@ -1,0 +1,9 @@
+<div role="feed" class="tiles" data-jplist-group="resources">
+    {% for resource in site.posts %}
+    <a href="{{ resource.url }}" class="card" data-jplist-item>
+        <p class="type">{{ resource.categories }}</p>
+        <h2 class="h5">{{ resource.title }}</h2>
+        <span class="fas fa-arrow-right"></span>
+    </a>
+    {% endfor %}
+</div>
