@@ -1,4 +1,4 @@
-{% assign featured = site.posts | where: 'is featured' | limit: 3 %}
+{% assign featured = site.posts | where: 'is featured', true | limit: 3 %}
 <h2>Featured Resources</h2>
 <div role="feed" class="tiles" data-jplist-group="resources">
     {% for resource in featured %}
